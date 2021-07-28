@@ -1,0 +1,27 @@
+{
+  "name": "sentir-el-ser",
+  "version": "1.0.0",
+  "description": "sentir-el-ser",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "test": "clear && nodemon src/app.js -e html,css,js,ejs,mjs,json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonzalolsk/sentir-el-ser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonzalolsk/sentir-el-ser/issues"
+  },
+  "homepage": "https://github.com/gonzalolsk/sentir-el-ser#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
