@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#logo{
+    width: 100%;
+}
+#a-logo{
+    width: 30%;
+}
+
+#burguer-botton {
+    padding: 8px 8px;
+    max-width: 35px;
+    background-color: #f0c949;
+    color: #240c31;
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+    border-radius: 8px;
+    display: block;
+    margin-top: 35px;
+}
+
+#burguer-botton a{
+    width:100%
+}
+
+.desktop-view{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+}
