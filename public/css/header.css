@@ -11,6 +11,7 @@
 }
 #a-logo{
     width: 30%;
+    max-width: 260px;
 }
 
 #iburguer {
@@ -25,7 +26,7 @@
 }
 
 
-.desktop-view{
+#nav-bar{
     display: none;
 }
 
@@ -33,5 +34,43 @@ header{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    background-color: #4b0363
+    background-color: #4b0363;
+}
+/* ======================================Media Queries====================================== */
+@media (min-width: 700px) {
+    header{
+        padding: 20px;
+        max-height: 150px;
+        justify-content: start;
+    }
+
+    #nav-bar{
+        display: block;
+        width: 100%;
+    }
+
+    #nav-bar ul {
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        /* position: relative;
+        top: 40px; */
+        width:100%
+
+    }
+
+    #nav-bar li{
+        list-style:none;  
+        margin: 10px;
+    }
+
+    #nav-bar li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    #iburguer {display: none;}
 }

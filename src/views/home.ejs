@@ -15,24 +15,32 @@
 </body>
 
     <main>
+        <div id="main-box">
         <div id="titles-box">
         <h1>Sentir el Ser</h1>
         <h2>El Ser no se puede explicar, solo sentir</h2>
         </div>
+        <div id="video-y-form">
         <div id="video-box">
         <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/IekJEHOtJn4" title="YouTube Sentir el Ser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 <!-- FORMULARIO -->
-<form action="#" method="post">
-    <fieldset>
-<label for="name">Nombre</label>
-<input type="text" name="name">
-
-<label for="email">Email</label>
-<input type="email" name="email">
-
-<button type="submit">Lo Quiero!</button>
+<form action="#" method="post" id="register-form">
+    <fieldset id="fildset-register">
+        <h2>Registrate</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis delectus provident perspiciatis quam magni dicta alias illo, sint at obcaecati accusantium vitae molestiae voluptas odio.</p>
+        <div>
+            <label for="name">Nombre</label>
+            <input type="text" class="form-input" id="name-input" name="name">
+        </div>
+        <div>
+            <label for="email" >Email</label>
+            <input type="email" class="form-input" id="email-input" name="email">
+        </div>
+        <button id="submit-button" type="submit">Registrarme</button>
+    </div>
     </fieldset>
 </form>
+</div>
     </main>
 </html>
