@@ -6,12 +6,17 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+header{
+    background: linear-gradient(#1B0043, #4b0363);
+}
+
 #logo{
     width: 100%;
 }
 #a-logo{
     width: 30%;
-    max-width: 260px;
+    max-width: 150px;
+    margin-right: 100px;
 }
 
 #iburguer {
@@ -34,15 +39,16 @@ header{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    background-color: #4b0363;
+    /* background-color: #4b0363; */
 }
 /* ======================================Media Queries====================================== */
 @media (min-width: 700px) {
     header{
-        padding: 20px;
-        max-height: 150px;
+        padding: 0 20px;
+        max-height: 80px;
         justify-content: start;
     }
+
 
     #nav-bar{
         display: block;
@@ -50,12 +56,12 @@ header{
     }
 
     #nav-bar ul {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: flex;
         justify-content: space-between;
         /* position: relative;
         top: 40px; */
-        width:100%
+        width:100%;
 
     }
 
@@ -65,7 +71,7 @@ header{
     }
 
     #nav-bar li a {
-        color: white;
+        color: rgb(229, 216, 235);
         text-decoration: none;
         font-weight: 600;
         font-size: 1rem;
