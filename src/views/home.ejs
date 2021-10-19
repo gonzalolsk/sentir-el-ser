@@ -3,7 +3,7 @@
 <head>
     <%-include('includes/head') %>
     <title>Home</title>
-    <link rel="shortcut icon" href="img/logos/logo-sin-texto.png" type="image/x-icon"> 
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon"> 
     <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
@@ -17,18 +17,19 @@
     <main>
         <div id="main-box">
         <div id="titles-box">
-        <h1>Sentir el Ser</h1>
+        <h1>Coaching Astro - Filosófico</h1>
         <h2>El Ser no se puede explicar, solo sentir</h2>
         </div>
         <div id="video-y-form">
         <div id="video-box">
         <iframe id="video" width="600" height="400" src="https://www.youtube.com/embed/IekJEHOtJn4" title="YouTube Sentir el Ser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Ve este video y conoce más sobre nosotros</p>
         </div>
 <!-- FORMULARIO -->
 <form action="#" method="post" id="register-form">
     <fieldset id="fildset-register">
         <h2>Registrate</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis delectus provident perspiciatis quam magni dicta alias illo, sint at obcaecati accusantium</p>
+        <p>Obten una clase gratuita y recibe nuestras novedades y promociones</p>
         <div>
             <label for="name">Nombre</label>
             <input type="text" class="form-input" id="name-input" name="name">
@@ -43,5 +44,29 @@
     </fieldset>
 </form>
 </div>
+
+<ul id="mas-info-cards">
+    <li class="card" id="card-masterclass">
+        <img src="img/Masterclass.png" alt="masterclass-icon">
+        <h3>Masterclass</h3>
+        <p>Clases específicas sobre un tema en particular</p>
+        <button>Mas Info</button>
+    </li>
+
+    <li class="card" id="card-talleres">
+        <img src="img/Talleres.png" alt="talleres-icon">
+        <h3>Talleres</h3>
+        <p>Programa de entrenamiento intensivo que te capacitará para transformar tu vida</p>
+        <button>Mas Info</button>
+    </li>
+
+    <li class="card" id="card-cursos">
+        <img src="img/Cursos.png" alt="cursos-icon">
+        <h3>Cursos</h3>
+        <p>Talleres de especialización que ampliará tu visión y conocimiento</p>
+        <button>Mas Info</button>
+    </li>
+</ul>
+
     </main>
 </html>
