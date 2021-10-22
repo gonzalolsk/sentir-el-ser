@@ -1,0 +1,118 @@
+body{
+    background: linear-gradient(#4b0363, #1B0043);
+}
+
+.centrado-flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-size: 2em;
+    color: #dbbf20;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+#box-escuela-descripcion{
+    display: flex;
+    justify-content: center;
+}
+#escuela-descripcion{
+    text-align: justify;
+    width: 100%;
+    color:antiquewhite;
+    line-height: 2em;
+    background-color: rgb(59, 37, 63);
+    padding: 30px;
+    font-weight: 600;
+}
+
+
+/* -----------------------------seccion profesores */
+
+.box-profesores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px
+}
+
+#profe-img-santi{
+    width:200px;
+    height:200px;
+    border-radius:160px;
+    border:10px solid #666;
+}
+#profe-img-mica{
+    width:200px;
+    height:200px;
+    border-radius:160px;
+    border:10px solid #666;
+}
+.profe-nombre{
+    font-size: 1.5rem;
+    color:antiquewhite;
+}
+.profe-descripcion{
+    margin: 20px;
+    text-align: justify;
+    width: 100%;
+    color:antiquewhite;
+    line-height: 2em;
+    background-color: rgb(61, 3, 73);
+    padding: 30px;
+}
+
+.contacto-profe{
+ display: block;
+ text-align: center;
+ margin: 15px;
+}
+
+.contacto-profe a{
+    display: block;
+    text-decoration: none;
+}
+.instagram{
+    color: crimson;
+}
+
+
+
+
+
+
+
+/* =============================================================================================================== */
+/* =================================================Media Queries================================================= */
+/* =============================================================================================================== */
+@media (min-width: 800px) {
+
+/* -----------------------------seccion profesores */
+
+.box-profesores{
+    display: flex;
+    margin: 20px
+}
+
+#profe-img-santi{
+    width:200px;
+    height:200px;
+    border-radius:160px;
+    border:10px solid #666;
+}
+#profe-img-mica{
+    width:200px;
+    height:200px;
+    border-radius:160px;
+    border:10px solid #666;
+}
+
+
+
+}
