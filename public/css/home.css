@@ -1,11 +1,18 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
 
-/* body{
-    background-image: url('/img/fondoestrellado.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+/* .bgimg {
+    display: block;
+    background-size: contain;
+    background-image: url(/img/fondo-conste.png),linear-gradient(#4b0363, #1B0043);
+    background-repeat: repeat;
+    z-index: -1;
 } */
-
-body{
+.bgimg{
     background: linear-gradient(#4b0363, #1B0043);
 }
 
@@ -16,11 +23,20 @@ h1, h2{
     text-align: center;
 }
 
-h2{    font-size: 2em;
+h1{
+    color: #dbbf20;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+h2{ font-size: 2em;
     color: #dbbf20;
     text-align: center;
-    margin: 20px;
+    margin-bottom: 20px;
     text-transform: uppercase;
+}
+h1 ~ h2{
+    font-size: 1em;
 }
 
 #main-box {
@@ -29,6 +45,7 @@ h2{    font-size: 2em;
         flex-direction: column;
         justify-content: center; */
 }
+
 
 /* ================video================ */
 #video-box{
@@ -61,7 +78,10 @@ margin-top: 20px
     width: 70%
 }
 #register-form h2{
-    margin: 25px
+    margin: 15px;
+    color: crimson;
+    font-size: 1.75em;
+    text-transform: uppercase
 }
 #register-form p{
     margin: 10px;
@@ -117,20 +137,16 @@ label {
     text-align: center;
 }
 
-#fildset-register h2{
-    font-size: 1.6rem;
-    text-transform: uppercase;
-
-}
 
 /*=================== mas info cards ===================*/
+#estudia-section{
+    background-color: rgb(241, 231, 241);
+    padding-top: 50px;
+}
 #mas-info-cards{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
-    background-color: #fff;
-    padding-top: 50px;
 }
 
 .card{
@@ -206,9 +222,30 @@ label {
 
 /* -----------------------------profesores----------------------------- */
 #profesores-section{
-    background-color: crimson;
     padding-top: 20px;
 }
+
+.bgimg2 {
+    display: block;
+    position: relative;
+    background-size: contain;
+    background:linear-gradient(#4b0363, #1B0043);
+    background-repeat: repeat;
+    z-index: -1;
+  }
+  
+  .bgimg2::after {
+    content: "";
+    background-image: url(/img/fondo-conste.png);
+    background-position-y: -150px;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
 
 .box-profesores{
     display: flex;
@@ -270,7 +307,7 @@ label {
 }
 
 .boton-ver-mas {
-margin-left: 20px;
+    margin-left: 20px;
     background-color: #fff;
     border: 0 solid #e2e8f0;
     border-radius: 1.5rem;
@@ -295,10 +332,15 @@ margin-left: 20px;
 .boton-ver-mas:hover {
     background-color: rgb(61, 3, 73);
     color: #fff;
+    
 }
     
 
 /* -----------------------------Aprende con nosotros----------------------------- */
+#aprende-section {
+    padding: 20px 0;
+    background-color: rgb(241, 231, 241);
+}
 #box-aprende{
     display: flex;
     flex-direction: column;
@@ -337,8 +379,105 @@ margin-left: 20px;
     width: 20vw;
 }
 
+/* ------------------------------------------------------------------Carousel */
+
+#box-carousel{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: rgb(21, 21, 21);
+	padding: 1rem;
+}
+#carousel {
+    background-color: rgb(53, 11, 92);
+	height: 100vh;
+	flex: 1 0 100%;
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+	justify-content: center;
+	overflow: hidden;
+}
+#carousel nav {
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#carousel nav a {
+	flex: 1 0 auto;
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	text-decoration: none;
+	color: snow;
+}
+
+#carousel nav a:last-child {
+	justify-content: flex-end;
+}
+
+#carousel nav a i {
+	background-color: tomato;
+	padding: 1rem;
+	font-size: 1rem;
+	border-radius: 2rem;
+}
+
+#carousel ul {
+display: none;
+}
 
 
+#carousel img {
+	max-width: 100%;
+}
+#wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+}
+#wrapper .slide-container {
+	flex: 1 0 100%;
+	order: 1;
+	opacity: 0;
+	transition: all 1s ease-out;
+}
+
+#wrapper .slide-container.active {
+	opacity: 1;
+	order: 0;
+}
+.box-art-testimonios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    
+}
+
+.box-art-testimonios img{
+    width:200px;
+    height:200px;
+    border-radius:160px;
+    border:10px solid #666;
+}
+.box-art-testimonios h3{
+    margin: 20px;
+    font-size: 1.5em;
+    color: tomato;
+}
+.box-testimonios-p{
+    width: 50vw;
+    height: auto;
+    color:antiquewhite;
+    font-weight: 600;
+    text-align: center;
+}
 
 /* =============================================================================================================== */
 /* =================================================Media Queries================================================= */
@@ -369,10 +508,9 @@ margin-left: 20px;
     /*----------------------------------- mas info cards querys*------------*/
 #mas-info-cards{
     flex-direction: row;
-
     justify-content: space-around;
     align-items: flex-start;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .card{
@@ -410,7 +548,7 @@ margin-left: 20px;
     padding:0;
     padding-top: 20px;
     height:400px;
-    width: 200px;
+    width: 400px;
     position: relative;
 }
 #box-aprende h3 {
@@ -432,5 +570,37 @@ margin-left: 20px;
 }
 
 
+/* -----------------------------------------------Carousel */
+#carousel {
+	height: 80vh;
+}
+#carousel ul {
+    position:absolute;
+    display: flex;
+	z-index: 10;
+	width: 25%;
+	height: 2rem;
+	justify-content: space-between;
+    bottom: 0.3rem
+}
+#carousel ul li {
+	flex: 1 0 auto;
+	display: flex;
+	justify-content: center;
+	pointer-events: all;
+	cursor: pointer;
+}
+
+#carousel ul li i {
+	color: snow;
+	width: 2rem;
+	font-size: 1rem;
+	padding: 0.5rem;
+}
+
+#carousel ul li.active i {
+	background-color: tomato;
+	border-radius: 2rem;
+}
 
 }
