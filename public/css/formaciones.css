@@ -1,0 +1,49 @@
+h1{
+    text-transform: uppercase;
+    color: black;
+    margin: 70px;
+}
+
+
+#formaciones-box{
+    background-color:#d8cfdb; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.art-formaciones {
+    width:95%;
+    margin: 25px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+
+    }
+.art-formaciones img{
+    width: 100px ;
+}
+.art-formaciones h2{
+        font-size: 2em;
+        color: #dbbf20;
+        text-align: center;
+        margin: 20px;
+        text-transform: uppercase;
+}
+.art-formaciones p{
+    margin: 0 20px;
+    margin-bottom: 20px ;
+    color: #4b0363;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    font-size: 1.1rem;
+    text-align: justify;
+    font-weight: 600;
+}
+
+#art-masterclass{
+margin-top: 0;
+}
+

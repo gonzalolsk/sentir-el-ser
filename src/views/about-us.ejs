@@ -2,16 +2,18 @@
 <html lang="es">
   <head>
     <%-include('includes/head') %>
-    <title>Home</title>
+    <title>Escuela Online - Sentir el Ser</title>
     <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="/css/normalize.css" type="text/css"/>
     <link rel="stylesheet" href="/css/about-us.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/aprende.css">
+    <link rel="stylesheet" href="/css/include-formaciones.css">
+    <link rel="stylesheet" href="/css/testimonios.css">
   </head>
   <body>
     <%-include('includes/header')%>
 
     <!-- -----------------------------------------------MAIN----------------------------------------------- -->
-
     <main>
         <div>
             <h2>La ESCUELA</h2>
@@ -50,11 +52,11 @@
         <div id="profes">
             <h2>PROFESORES</h2>
             <section>
-                <article  class="box-profesores">
+                <article  class="box-profesores" id="profe-santi">
                     <img id="profe-img-santi" src="/img/FotoSantiagoRoldán.jpeg" alt="profesor santiago roldan">
                     <div class="box-profesores">
                     <h3 class="profe-nombre">Santiago Roldan</h3>
-                    <p class="profe-descripcion">“La totalidad de la fuerza del Universo esta contenida en nuestro Ser”
+                    <p class="profe-descripcion"><span>“La totalidad de la fuerza del Universo esta contenida en nuestro Ser”</span>
                         Nací en la ciudad de Mar del Plata, en Argentina, donde me crié teniendo la oportunidad de
                         llenarme de la pureza y energía del Mar. En mi adolescencia comencé a relacionarme con el
                         mar de manera diferente y cada día caminaba hacia allí donde pasaba el tiempo contemplando,
@@ -93,19 +95,19 @@
                         experimentado y visto funcionar en las personas que me rodean. Desarrollemos juntos las
                         habilidades innatas de tu Ser.
                         <span class="contacto-profe">
-                        Contacto:
+                        Contacto
                         <a href="https://www.instagram.com/santi_filo/"> <i class="instagram fab fa-instagram"></i> Instagram</a>
-                        <a href="https://www.facebook.com/sentirelserfilosofia/"> <i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="https://www.facebook.com/sentirelserfilosofia/"> <i class="facebook fab fa-facebook"></i> Facebook</a>
                     </span>
                     </p>
                     </div>
                 </article>
 
-                <article class="box-profesores">
+                <article class="box-profesores" id="profe-mica">
                     <img id="profe-img-mica" src="/img/FotoMicaelaPrusso.jpg" alt="profesora Micaela Prusso">
                     <div class="box-profesores">
                     <h3 class="profe-nombre">Micaela Prusso</h3>
-                    <p class="profe-descripcion">"Estamos profundamente unidos y en cada uno de nosotros habita la totalidad del Universo"
+                    <p class="profe-descripcion"><span>"Estamos profundamente unidos y en cada uno de nosotros habita la totalidad del Universo"</span>
                         Nací bajo el signo de Piscis, con Luna en Géminis y Ascendente Capricornio. Desde pequeña
                         me interesó comprender la existencia, el comportamiento humano y el funcionamiento del
                         inconsciente. Con el tiempo, fui incursionando, estudiando e investigando diferentes disciplinas
@@ -134,7 +136,7 @@
                         contiene.
                         Cada ser humano tiene su propósito. El mío, es acompañarte y ayudarte a encontrar el tuyo.
                         <span class="contacto-profe">
-                        Contacto:
+                        Contacto
                         <a href="https://www.instagram.com/micamoksha/"> <i class="instagram fab fa-instagram"></i> Instagram</a>
                         <a href="https://www.facebook.com/micamoksha"> <i class="facebook fab fa-facebook"></i> Facebook</a>
                     </span>
@@ -144,6 +146,21 @@
                 </article>
             </section>
         </div>
+
+<!-- -------------------------------------Estudia Online -->
+
+<%-include('includes/formaciones')%> 
+
+<!-- --------------------------------------------------testimonios -->
+
+<%-include('includes/testimonios')%> 
+
+        
+<!-- ----------------------------Aprende con nosotros -->
+
+<%-include('includes/aprende')%> 
+
+
 
     </main>
   </body>

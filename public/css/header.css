@@ -8,6 +8,9 @@
 
 header{
     background: linear-gradient(#1B0043, #4b0363);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
 }
 
 #logo{
@@ -35,12 +38,32 @@ header{
     display: none;
 }
 
-header{
+
+/* -------------------iconos de redes sociales */
+#social-section{
     display: flex;
-    justify-content:space-around;
-    align-items: center;
-    /* background-color: #4b0363; */
+    justify-content: space-between;
 }
+#social-section i{
+    margin:10px;
+}
+
+.facebook-header{
+    color:antiquewhite;
+    transition: all 300 ms
+}
+.facebook-header:hover{
+    color:rgb(16, 16, 126)
+}
+.instagram-header{
+    color:antiquewhite;
+    transition: all 300 ms
+}
+.instagram-header:hover{
+    color:crimson
+}
+
+
 /* ======================================Media Queries====================================== */
 @media (min-width: 700px) {
     header{
@@ -56,27 +79,29 @@ header{
     }
 
     #nav-bar ul {
-        /* border: 1px solid red; */
         display: flex;
-        justify-content: space-between;
-        /* position: relative;
-        top: 40px; */
+        justify-content: start;
         width:100%;
-
     }
 
     #nav-bar li{
-        list-style:none;  
-        margin: 10px;
+        list-style:none;
+        margin: 25px;
     }
 
     #nav-bar li a {
         color: rgb(229, 216, 235);
         text-decoration: none;
-        font-weight: 600;
         font-size: 1rem;
-        text-transform: uppercase;
+        transition: all 100ms;
     }
+    #nav-bar li a:hover{
+        border-bottom: 3px solid #f0c949;
+        color: white
 
+
+    }
     #iburguer {display: none;}
+
+
 }
