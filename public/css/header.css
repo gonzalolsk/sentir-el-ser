@@ -48,18 +48,18 @@ header{
     margin:10px;
 }
 
-.facebook-header{
+.facebook-hf{
     color:antiquewhite;
     transition: all 300 ms
 }
-.facebook-header:hover{
+.facebook-hf:hover{
     color:rgb(16, 16, 126)
 }
-.instagram-header{
+.instagram-hf{
     color:antiquewhite;
     transition: all 300 ms
 }
-.instagram-header:hover{
+.instagram-hf:hover{
     color:crimson
 }
 

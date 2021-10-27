@@ -33,8 +33,11 @@ h2{ font-size: 2em;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+transition: all 300ms;
 }
-
+.card:hover{
+    background: linear-gradient(180deg, rgba(161,158,215,1) 0%, rgb(76, 58, 163) 0%, rgb(61, 20, 102) 100%, rgba(161,158,215,1) 100%);
+}
 .card img{
     width: 100px;
     margin-bottom:40px;
@@ -81,11 +84,14 @@ h2{ font-size: 2em;
 }
 
 
-.card button:hover {
+.card a:hover {
     background-position: right center;
     color: rgb(39, 36, 36);;
     text-decoration: none;
-    }
+    transform: scale(1.05); 
+}
+
+    
 
 
     /* =============================================================================================================== */

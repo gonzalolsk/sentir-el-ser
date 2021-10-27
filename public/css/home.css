@@ -27,6 +27,9 @@ h1{
     color: #dbbf20;
     font-size: 2em;
     text-transform: uppercase;
+    position:relative;
+    margin: 0 50px;
+    
 }
 
 h2{ font-size: 2em;
