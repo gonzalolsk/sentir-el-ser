@@ -40,11 +40,6 @@ transition: all 300ms
     transform: scale(1.05); 
 }
 
-#box-aprende h3{
-    margin: 20px;
-    color:antiquewhite;
-    letter-spacing: 0.2em;
-}
 
 #box-aprende p{
     color: antiquewhite;    
@@ -68,22 +63,18 @@ transition: all 300ms
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
 }
 .box-art-aprende{
     padding:0;
-    padding-top: 20px;
     height:400px;
     width: 400px;
-    position: relative;
-}
-#box-aprende h3 {
-    position: absolute;
-    top: 5px;
 }
 
 .box-aprende-p{
     background-color:transparent;
     margin: 20px;
+    margin-top:40px
 }
 #box-aprende p{
     color: antiquewhite;   

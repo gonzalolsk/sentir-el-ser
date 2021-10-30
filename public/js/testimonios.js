@@ -1,6 +1,6 @@
 
 
-// Step One : Select All elements of Carousel
+//  Seleccion de los elementos
 let slides = document.querySelectorAll(".slide-container"); // Select All Slides
 let arrows = document.querySelectorAll("a.arrow"); // Select Arrows
 let dots = document.querySelectorAll("li.dot"); // Select All Dots
@@ -11,7 +11,7 @@ slides = Array.from(slides); // Convert a Array
 arrows = Array.from(arrows); // Convert a Array
 dots = Array.from(dots); // Convert a Array
 
-// Step Two : Seleccionamos el dot correspondiente al slide activo
+// Selecciono el dot correspondiente al slide activo
 
 const activeDot = (slide) => {
 	let dots = document.querySelectorAll("li.dot"); // Select All Dots
@@ -21,7 +21,7 @@ const activeDot = (slide) => {
 	dotToShow.classList.add("active"); // Add class active to dot selected
 };
 
-// Step Three : Modificamos el next y el preview correspondiente al slide activo
+//  Modifico el next y el preview correspondiente al slide activo
 const modArrow = () => {
 	const arrowLeft = document.querySelector("#btn-preview"); // Select Arrow Left
 	const arrowRight = document.querySelector("#btn-next"); // Select Arrow RIght
@@ -42,7 +42,7 @@ const modArrow = () => {
 	console.log("next", arrowRight.dataset.next);
 };
 
-// Step Four : Show one slide based in index
+// Mostrar un slide en base al indice
 const showSlide = (number) => {
 	let slides = document.querySelectorAll(".slide-container");
 	slides = Array.from(slides);
@@ -59,7 +59,7 @@ const showSlide = (number) => {
 
 showSlide(0);
 
-// Step Five: Add events for clicks arrows
+// Agregar los eventos click para las flechitas
 arrows = Array.from(arrows);
 
 arrows.forEach((arrow) => {
@@ -77,7 +77,7 @@ arrows.forEach((arrow) => {
 	});
 });
 
-// Step FInal: Add events for clicks dot
+//  Agregar los eventos click para los dot
 
 dots = Array.from(dots);
 
@@ -91,7 +91,7 @@ dots.forEach((dot) => {
 	});
 });
 
-// Step Final Alternative: Auto moving
+//Auto moving
 
 setInterval(() => {
 	arrows[1].click();
