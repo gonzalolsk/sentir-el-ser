@@ -5,9 +5,14 @@
     font-size: 15px;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
-header{
+a{
+    text-decoration: none;
+}
+header {
     background: linear-gradient(#1B0043, #4b0363);
+
+}
+#container-main-header{
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -15,28 +20,49 @@ header{
 
 #logo{
     width: 100%;
+    max-width: 170px;
+    min-width: 50px;
 }
 #a-logo{
-    width: 30%;
-    max-width: 150px;
+    width: 50%;
+    
     margin-right: 100px;
+
 }
 
 #iburguer {
+    display:block;
     padding: 8px 8px;
-    max-width: 35px;
-    background-color: #f0c949;
+    background-color: #d8b132;
     color: #240c31;
     text-align: center;
     font-size: 15px;
     margin: auto;
-    border-radius: 8px;
 }
 
 
-#nav-bar{
+#nav-bar-desktop{
     display: none;
 }
+
+#nav-bar-mobile{
+    background-color:#d8b132;
+    padding:20px;
+    color: white;
+    cursor:pointer;
+    font-size:1.5em;
+    position: relative;
+
+
+}
+
+#nav-bar-mobile ul li{
+    list-style:none;
+    padding:0;
+    margin:0
+}
+
+
 
 
 /* -------------------iconos de redes sociales */
@@ -65,7 +91,7 @@ header{
 
 
 /* ======================================Media Queries====================================== */
-@media (min-width: 700px) {
+@media (min-width: 880px) {
     header{
         padding: 0 20px;
         max-height: 80px;
@@ -73,29 +99,31 @@ header{
     }
 
 
-    #nav-bar{
+    #nav-bar-desktop{
         display: block;
         width: 100%;
     }
-
-    #nav-bar ul {
+#nav-bar-mobile{
+    display:none
+}
+    #nav-bar-desktop ul {
         display: flex;
         justify-content: start;
         width:100%;
     }
 
-    #nav-bar li{
+    #nav-bar-desktop li{
         list-style:none;
         margin: 25px;
     }
 
-    #nav-bar li a {
+    #nav-bar-desktop li a {
         color: rgb(229, 216, 235);
         text-decoration: none;
         font-size: 1rem;
         transition: all 100ms;
     }
-    #nav-bar li a:hover{
+    #nav-bar-desktop li a:hover{
         border-bottom: 3px solid #f0c949;
         color: white
 

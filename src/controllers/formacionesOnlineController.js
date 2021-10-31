@@ -3,5 +3,6 @@ const controller = {
     seminarios: (req,res) => { res.render('seminarios')},
     formacion: (req, res) => { res.render('formacion')},
     formacionesOnline:(req, res) => { res.render('formaciones-online')}
+    
 }
 module.exports = controller
