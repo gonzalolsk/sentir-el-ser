@@ -50,7 +50,7 @@ a{
 #menuNav{
     display: none;
     transition: all 0.5s ease-out;
-    margin-right:10vw
+    margin-right:10vw;
 }
 
 #burgerMenu  .burguer{
@@ -73,7 +73,7 @@ a{
     background-color: #F5E078;
     border: solid #F5E078 1px;
     border-radius: 100%;
-    color: #30544E;
+    color: #210629;
     width: 10vw;
     height: 10vw;
     display: flex;
@@ -130,21 +130,24 @@ a{
 
 #menuNav:target .mainNav li ul li{
     font-weight: normal;
-    list-style: inside;
+    list-style:none;
     color:#F5E078
 }
 #menuNav:target .mainNav a{
     color:#F5E078
 }
 
-.avatar{
-    width: 1.5em;
-    border-radius: 100%;   
+
+.mainNav>li>ul>li{
+    margin: 5px;
+    border-bottom: 1px solid black;
+    
 }
 
 /* .iconsNav>li>ul{
     display: none;
 } */
+
 
 
 /*********************************************** TABLET ***********************************************/
@@ -192,20 +195,23 @@ a{
     }
 
     .mainNav>li:hover>ul {
-        height: 10vh;
+        
         position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: rgba(51, 109, 75, 0.75);
-        padding: 0px 10px;
+        background-color: rgba(33, 6, 41,0.95);
+        border: 2px solid black;
+        padding:15px;
         border-radius: 5px;
         z-index: 1;
     }
-
-    .mainNav>li>ul>li>a{
-        margin: 0px;
+    .mainNav>li>ul>li{
+        margin: 5px;
+        border-bottom: 1px solid black;
     }
+
+
 
     /* .iconsNav{
         display: flex;
