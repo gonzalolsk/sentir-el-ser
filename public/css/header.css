@@ -1,4 +1,324 @@
-* {
+/*********************************************** HEADER MOBILE ***********************************************/
+header{
+    background-color: #210629;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(71, 6, 71, 0.6);
+}
+a{
+    text-decoration:none
+}
+.logo{
+    width: 100%;
+    max-width: 170px;
+    min-width: 50px;
+}
+
+/* 
+.search { 
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color:#30544E;
+    width: 50vw;
+    margin: auto;
+} 
+
+.search > input:focus {
+    outline: none;
+}
+
+.searchBar{
+    color: #30544E;
+    border: none;
+    padding:5px 10px;
+    width: 85%;
+}
+*/
+.mainNav a:hover{
+    color: #A78B48;
+}
+
+/* .iconsNav a:hover{
+    color: #A78B48;
+} */
+
+#menuNav{
+    display: none;
+    transition: all 0.5s ease-out;
+    margin-right:10vw
+}
+
+#burgerMenu  .burguer{
+    font-size: 6vw;
+    color: #210629;
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+    margin: auto;
+    background-color: #F5E078;
+    border: solid #F5E078 1px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#exitMenu .exit{
+    font-size: 6vw;
+    background-color: #F5E078;
+    border: solid #F5E078 1px;
+    border-radius: 100%;
+    color: #30544E;
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3.5vh;
+    right: 1vw;
+}
+
+#burgerMenu .burguer:hover{
+    background-color: #A78B48;
+    border: solid #A78B48 1px;
+    transition: all 0.25s;
+}
+
+#menuNav:target{
+    font-size: 1.75em;
+    display: flex;
+    position: fixed;
+    width: 79vw; 
+    height: 100vh;
+    background-color: rgba(33, 6, 41,0.95) ;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+#menuNav:target .burgerMenu{
+    visibility: hidden;
+}
+
+/* #menuNav:target .iconsNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    font-size: 1.5em;
+    top: 4vh;
+} */
+
+/* #menuNav:target .iconsNav a{
+    color:#F5E078;
+    margin: 0 4vw;
+} */
+
+#menuNav:target .mainNav li{
+    font-weight: bold;
+    color:#F5E078
+}
+
+#menuNav:target .mainNav li ul li{
+    font-weight: normal;
+    list-style: inside;
+    color:#F5E078
+}
+#menuNav:target .mainNav a{
+    color:#F5E078
+}
+
+.avatar{
+    width: 1.5em;
+    border-radius: 100%;   
+}
+
+/* .iconsNav>li>ul{
+    display: none;
+} */
+
+
+/*********************************************** TABLET ***********************************************/
+@media (min-width: 768px){
+
+    /*********************** HEADER TABLET ***********************/    
+
+
+    #menuNav:target{
+        display: none;
+    }
+
+    #menuNav{
+        display: contents;
+    }
+
+    #exitMenu{
+        display: none;
+    }
+
+    .mainNav{
+        width: 45vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .mainNav li>a{
+        color: #F5E078;
+        text-decoration: none;
+        padding: 5px 0;
+        font-size: 1.1em;
+        font-weight: 350;
+        position: relative;
+    }
+
+    .mainNav>li{
+        float: left;
+        text-align:left
+    }
+
+    .mainNav>li>ul{
+        display: none;
+    }
+
+    .mainNav>li:hover>ul {
+        height: 10vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(51, 109, 75, 0.75);
+        padding: 0px 10px;
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    .mainNav>li>ul>li>a{
+        margin: 0px;
+    }
+
+    /* .iconsNav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 10vw;
+        margin-right: -6vw;
+    } 
+    
+    .iconsNav a{
+        font-size: 150%;
+        color: #F5E078;
+    } */
+
+    /* .search {
+        width: 20%;
+        margin: 5px;
+    } */
+    #burgerMenu{
+        display: none;
+    }
+
+    .avatar{
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    /* .iconsNav>li:hover>ul {
+        height: 10vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(51, 109, 75, 0.75);
+        padding: 0px 10px;
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    .iconsNav>li>ul>li>a{
+        font-size: 1.2em;
+    } */
+
+    #social-section{
+    display: flex;
+    justify-content: space-between;
+}
+#social-div i{
+    margin:10px;
+}
+
+.facebook-hf{
+    color:#F5E078;
+    transition: all 300 ms
+}
+.facebook-hf:hover{
+    color:rgb(16, 16, 126)
+}
+.instagram-hf{
+    color:#F5E078;
+    transition: all 300 ms
+}
+.instagram-hf:hover{
+    color:crimson
+}
+
+}
+
+
+/*********************************************** DESKTOP ***********************************************/
+@media (min-width: 1021px){
+    /*********************** HEADER DESKTOP ***********************/
+    header{
+        margin: auto;
+    }
+
+    .mainNav{
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    .mainNav li>a{
+        font-size: 1.4em;
+    }
+    
+    /* .iconsNav{
+        margin: 0px;
+        width: 10%;
+    } */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================antiguo header ========================================*/
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -60,13 +380,13 @@ header {
     list-style:none;
     padding:0;
     margin:0
-}
+} */
 
 
 
 
 /* -------------------iconos de redes sociales */
-#social-section{
+/* #social-section{
     display: flex;
     justify-content: space-between;
 }
@@ -87,11 +407,11 @@ header {
 }
 .instagram-hf:hover{
     color:crimson
-}
+} */
 
 
 /* ======================================Media Queries====================================== */
-@media (min-width: 880px) {
+/* @media (min-width: 880px) {
     header{
         padding: 0 20px;
         max-height: 80px;
@@ -132,4 +452,4 @@ header {
     #iburguer {display: none;}
 
 
-}
+} */
