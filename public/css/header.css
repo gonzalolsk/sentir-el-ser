@@ -136,8 +136,14 @@ a{
 #menuNav:target .mainNav a{
     color:#F5E078
 }
+#social-div{
+    display:none
+}
+.sub-ul-formaciones, .sub-ul-about{display:none}
+.toggle{
+    display:block; 
 
-
+}
 .mainNav>li>ul>li{
     margin: 5px;
     border-bottom: 1px solid black;
@@ -255,11 +261,12 @@ a{
         font-size: 1.2em;
     } */
 
-    #social-section{
+    #social-div{
     display: flex;
     justify-content: space-between;
 }
 #social-div i{
+
     margin:10px;
 }
 

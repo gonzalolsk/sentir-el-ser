@@ -36,10 +36,10 @@ const modArrow = () => {
 		"data-next",
 		numberSlide >= lastSlide ? 0 : numberSlide + 1
 	);
-	console.log("quantity", quantitySlides);
-	console.log("current", numberSlide);
-	console.log("preview", arrowLeft.dataset.preview);
-	console.log("next", arrowRight.dataset.next);
+	// console.log("quantity", quantitySlides);
+	// console.log("current", numberSlide);
+	// console.log("preview", arrowLeft.dataset.preview);
+	// console.log("next", arrowRight.dataset.next);
 };
 
 // Mostrar un slide en base al indice
@@ -48,8 +48,8 @@ const showSlide = (number) => {
 	slides = Array.from(slides);
 	slides.forEach((slide) => slide.classList.remove("active"));
 	let slideToShow = slides.find((slide) => slide.dataset.slide == number);
-	console.clear();
-	console.log("slide", slideToShow);
+	// console.clear();
+	// console.log("slide", slideToShow);
 	if (slideToShow) {
 		slideToShow.classList.add("active");
 		activeDot(number);
@@ -66,8 +66,8 @@ arrows.forEach((arrow) => {
 	arrow.addEventListener("click", (e) => {
 		e.preventDefault();
 		let element = e.currentTarget;
-		console.clear();
-		console.log("element", element.dataset);
+		// console.clear();
+		// console.log("element", element.dataset);
 		if (element.dataset.next != undefined) {
 			showSlide(parseInt(element.dataset.next));
 		}
@@ -85,8 +85,8 @@ dots.forEach((dot) => {
 	dot.addEventListener("click", (e) => {
 		e.preventDefault();
 		let element = e.currentTarget;
-		console.clear();
-		console.log("element", element.dataset);
+		// console.clear();
+		// console.log("element", element.dataset);
 		showSlide(parseInt(element.dataset.target));
 	});
 });
