@@ -51,6 +51,7 @@ a{
     display: none;
     transition: all 0.5s ease-out;
     margin-right:10vw;
+
 }
 
 #burgerMenu  .burguer{
@@ -91,7 +92,7 @@ a{
 }
 
 #menuNav:target{
-    font-size: 1.75em;
+    font-size: 1.3em;
     display: flex;
     position: fixed;
     width: 79vw; 
@@ -108,6 +109,10 @@ a{
 
 #menuNav:target .burgerMenu{
     visibility: hidden;
+}
+
+#menuNav li{
+    margin-bottom:15px;
 }
 
 /* #menuNav:target .iconsNav{
@@ -165,6 +170,7 @@ a{
 
     #menuNav:target{
         display: none;
+        font-size: 1.6em;
     }
 
     #menuNav{
