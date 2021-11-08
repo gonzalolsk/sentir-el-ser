@@ -14,10 +14,17 @@
 } */
 .bgimg{
     background: linear-gradient(#4b0363, #1B0043);
-    padding-bottom:30px
+    background-image: url("/img/banner-universo.jpg") ;
+    background-repeat: repeat-y;
 }
 
-
+#titulo-principal {
+    font-size: 3em;
+    font-family: 'Caveat', cursive;
+}
+#subtitulo-principal{
+    font-family: 'Caveat', cursive;
+}
 h1, h2{
     margin:  auto;
     padding-top: 10px;
@@ -47,7 +54,12 @@ h1 ~ h2{
     font-size: 1em;
 }
 
-
+#titles-box{
+    background-image: url("/img/banner-universo.jpg");
+    width: 100%;
+    padding: 70px 0
+    
+}    
 
 #main-box {
     text-align: center;
@@ -72,6 +84,7 @@ margin-top: 20px
 }
 
 #video-y-form {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,7 +192,7 @@ label {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        margin: 50px 10px;
+        padding: 50px 10px;
     }
 
     #register-form {
