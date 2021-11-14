@@ -129,6 +129,7 @@ margin-top: 20px
 #email-input{
     margin-left:15px;
     margin-top:15px;
+    outline:none;
 }
 
 #name-input {

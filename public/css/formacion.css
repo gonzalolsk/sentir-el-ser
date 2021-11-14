@@ -1,4 +1,182 @@
+* {
+	box-sizing: border-box;
+	border: none;
+}
+/* #formacion-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+.art-formacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:40px;
+    text-align: justify;
+}
+.lista li{
+    margin-top: 10px;
+}
+.lista ul{
+    margin: 10px
+}
+.modulos ul{
+    padding: 10px;
+border: 1px solid grey;
+width: 100%;
+}
+.art-formacion h2{
+    color: #4b0363;
+    font-size: 2rem;
+    text-align: center;
+}
+.art-formacion h4{
+    color: #4b0363;
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px;
+}
+.art-formacion h3{
+    color: #4b0363;
+    font-size: 1em;
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
 #img-formacion{
-    width:100%;
+    width:60%;
     text-align:center;
+}
+
+.big-text{
+    text-align: center;
+    color:#4b0363;
+    margin: 25px;
+    text-transform: uppercase;
+}
+
+.boldybreak{
+    font-weight: bold;
+    display: block;  
+    margin: 5px;
+}
+
+/* formulario------------------------------------------------------------------- */
+#register-form{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 50px;
+    width: 70%
+}
+#register-form h5{
+    margin: 15px;
+    color: rgb(36, 3, 23);
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+#register-form p{
+    margin: 10px;
+    font-weight: normal;
+}
+#fildset-register{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(36, 3, 23);
+border-radius: 7px;
+    background-color: rgba(221, 204, 107, 0.671);
+    min-width: 250px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+}
+#fildset-register div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#email-input{
+    margin-left:15px;
+    margin-top:15px;
+}
+#email-input{
+    outline:none;
+}
+
+#name-input {
+    margin-top: 15px;
+}
+
+.form-input{
+    padding: 5px;
+    margin:7px 0px 9px;
+    border-radius: 10px;
+    border: 1px solid #373636;
+    width: 70%;
+}
+
+label {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #4b0363;
+}
+
+#submit-button{
+    background-color: rgb(13, 13, 114);
+    width: 100%;
+    height: 100%;   
+    color: #f5f5f5;
+    margin-left: 6px;
+    margin-top: 10px;
+    border-radius: 7px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 20px 0px 8px 0px;
+    border: 0px solid;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foto-mica{
+    width: 80%;
+    margin-bottom: 30px;
+    border: 2px solid rgba(0,0,0,0.71);
+    border-radius:7px
+}
+
+#mica-title {
+    font-size: 2rem;
+}
+
+
+.separador{
+    text-align: center;
+}
+
+.testimonios span{
+    display: block;
+    margin: 25px;
+    padding:25px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: rgb(37, 37, 82);
+    color: antiquewhite;
+    line-height: 2em;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
 }
