@@ -122,13 +122,15 @@ margin-top: 20px
     color:  rgb(229, 216, 235);
     font-weight: 600;
     margin-top: 50px;
+    padding-bottom:40px;
     width: 70%
 }
 #register-form h2{
     margin: 15px;
     color: crimson;
     font-size: 1.75em;
-    text-transform: uppercase
+    text-transform: uppercase;
+
 }
 #register-form p{
     margin: 10px;
@@ -136,33 +138,26 @@ margin-top: 20px
 }
 #fildset-register{
     border: none;
-    display: flex;
-    flex-direction: column;
     border: 2px solid black;
     border-radius: 4%;
     background-color: rgb(18, 17, 18, 0.5);
     min-width: 250px;
 }
-
-#email-input{
-    margin-left:15px;
-    margin-top:15px;
-    outline:none;
+#fildset-register input{
+    width: 190px
 }
 
-#name-input {
-    margin-top: 15px;
-}
+
+
 
 .form-input{
     padding: 5px;
     margin:7px 0px 9px;
     border-radius: 10px;
     border: 1px solid #373636;
-    width: 70%;
 }
 
-.form-input label {
+#fildset-register label {
     font-size: 1.2em;
     font-weight: 600;
 }
@@ -196,7 +191,8 @@ margin-top: 20px
 /* =============================================================================================================== */
 /* =================================================Media Queries================================================= */
 /* =============================================================================================================== */
-    @media (min-width: 850px) {
+  
+@media (min-width: 850px) {
 
     #video-box{
         width: 65%;
@@ -218,9 +214,26 @@ margin-top: 20px
         max-width: 35%;
         margin: 0 20px;
     }
-
-
 }
+
+/* -----------------------------min 400----------------------------- */
+@media (min-width: 400px) {
+    #email-input{
+        margin-left:20px;
+        margin-top:15px;
+        outline:none;
+    }
+    
+    #name-input {
+        margin-top: 15px;
+        margin-left:5px;
+    }
+    #fildset-register{
+        min-width: 300px;
+    }
+}
+
+
 
 /* -----------------------------Resoluciones muy pequeñas----------------------------- */
 @media (max-width: 300px) {
@@ -232,4 +245,5 @@ margin-top: 20px
     .titulo-principal ~ .subtitulo-principal{
         font-size: 0.8em;
     }
+
 }
