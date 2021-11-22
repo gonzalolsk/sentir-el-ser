@@ -165,7 +165,9 @@ a{
 @media (min-width: 768px){
 
     /*********************** HEADER TABLET ***********************/    
-
+    .logo{
+    margin-left:20px
+    }
 
     #menuNav:target{
         display: none;
@@ -173,6 +175,7 @@ a{
 
     #menuNav{
         display: contents;
+
     }
 
     #exitMenu{
@@ -180,6 +183,7 @@ a{
     }
 
     .mainNav{
+        margin-top:13px;
         width: 45vw;
         display: flex;
         flex-direction: row;
@@ -305,9 +309,7 @@ a{
         justify-content: space-around;
     }
 
-    .mainNav li>a{
-        font-size: 1.4em;
-    }
+
     
     /* .iconsNav{
         margin: 0px;
