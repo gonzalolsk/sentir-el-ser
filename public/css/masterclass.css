@@ -60,9 +60,13 @@
 
 #section-masterclass{
     flex-direction: row;
+    flex-wrap:wrap ;
+    align-items: center;
+    justify-content: flex-start; 
 }
 #section-masterclass a{
     width: 30%;
+    margin: auto 10px
 
 }
 

@@ -1,4 +1,4 @@
-body{
+.bg-about-us{
     background: linear-gradient(#4b0363, #1B0043);
 }
 
@@ -9,7 +9,7 @@ body{
     justify-content: center;
 }
 
-h2{
+.h2-about-us{
     font-size: 2em;
     color: #dbbf20;
     text-align: center;
