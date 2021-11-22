@@ -15,7 +15,7 @@
 .bgimg{
     background: linear-gradient(#4b0363, #1B0043);
     background-image: url("/img2/bg1.jpg") ;
-    background-size: cover;  
+    background-size: contain;  
 }
 
 .titulo-principal {
