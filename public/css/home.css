@@ -10,10 +10,10 @@
     background-size: contain;
     background-image: url(/img/fondo-conste.png),linear-gradient(#4b0363, #1B0043);
     background-repeat: repeat;
-    z-index: -1;
+    z-index: -1;    
 } */
 .bgimg{
-    background: linear-gradient(#4b0363, #1B0043);
+        background: linear-gradient(#4b0363, #1B0043);
     background-image: url("/img2/bg1.jpg") ;
     background-size: contain;  
 }

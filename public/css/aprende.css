@@ -18,6 +18,18 @@
     justify-content: center;
     margin: 20px;
 }
+#aprende1{
+    background-image: url("/img2/pruebaMandalica.png");
+}
+#aprende2{
+    background-image: url("/img2/aprende2.jpg");
+}
+#aprende3{
+    background-image: url("/img2/aprende3.jpg");
+}
+#aprende4{
+    background-image: url("/img2/aprende4.jpg");
+}
 
 .box-art-aprende{
     display: flex;
@@ -29,8 +41,9 @@
     border: 1px solid antiquewhite;
     border-radius: 7px;
     height:80wh;
-  
-    background-color: rgb(167, 101, 167);
+    background-size: cover;  
+    background-position: center;
+    background-color: #4b0363;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
@@ -40,9 +53,13 @@ transition: all 300ms
     transform: scale(1.05); 
 }
 
-
+#box-aprende{
+    position:relative
+}
 #box-aprende p{
     color: antiquewhite;    
+    align-items: justify;
+margin-top: 150px;
 }
 .box-aprende-p{
     margin: 20px;
