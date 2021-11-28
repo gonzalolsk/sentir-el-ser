@@ -1,10 +1,14 @@
 
 #testimonios-title{ 
-	font-size: 2em;
+	/* height: 1.5em;
+	padding: 10px;
+	text-align: center;
+	background-color: rgb(21, 21, 21); */
+	font-size: 3em;
     color: #dbbf20;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     text-align: center;
 }
 
@@ -24,6 +28,7 @@
 	height: 130vh;
 	flex: 1 0 100%;
 	display: flex;
+	align-items: center;
 	flex-flow: row wrap;
 	position: relative;
 	justify-content: center;
@@ -108,7 +113,8 @@ display: none;
     width: 50vw;
     height: auto;
     color:antiquewhite;
-    font-weight: 600;
+
+	font-size: 1.5rem;
     text-align: center;
 }
 
@@ -124,6 +130,8 @@ display: none;
 
 #carousel {
 	height: 80vh;
+	display: flex;
+	align-items: center;
 }
 #carousel ul {
     position:absolute;
