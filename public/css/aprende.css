@@ -20,7 +20,7 @@
     margin: 20px;
 }
 #aprende1{
-    background-image: url("/img2/pruebaMandalica.png");
+    background-image: url("/img2/aprende1.jpg");
 }
 #aprende2{
     background-image: url("/img2/aprende2.jpg");
@@ -41,7 +41,8 @@
     padding:15px 0;
     border: 1px solid antiquewhite;
     border-radius: 7px;
-    height:80wh;
+    height:450px;
+    width: 80vw;
     background-size: cover;  
     background-position: center;
     background-color: #4b0363;
@@ -54,17 +55,19 @@ transition: all 300ms
     transform: scale(1.05); 
 }
 
-#box-aprende{
+.box-art-aprende{
     position:relative
 }
 #box-aprende p{
     color: antiquewhite;    
     align-items: justify;
-margin-top: 150px;
+    margin: 0 20px;
+position: absolute;
+top: 230px;
+left: 0;
+font-size: 1.3em;
 }
-.box-aprende-p{
-    margin: 20px;
-}
+
 .icon-aprende{
     width: 20vw;
 }
@@ -75,18 +78,19 @@ margin-top: 150px;
 /* =================================================Media Queries================================================= */
 /* =============================================================================================================== */
 
-@media (min-width: 850px) {
+@media (min-width: 1050px) {
 
 #box-aprende{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
+
 }
 .box-art-aprende{
     padding:0;
-    height:400px;
-    width: 400px;
+    height:450px;
+    width: 300px;
 }
 
 .box-aprende-p{
@@ -97,10 +101,19 @@ margin-top: 150px;
 #box-aprende p{
     color: antiquewhite;   
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 .icon-aprende{
     max-width: 100px;
 }
 
+}
+
+/* Resoluciones muy pequeñas */
+@media (max-width: 360px) {
+    #box-aprende p{
+        position: absolute;
+        top: 200px;
+        font-size: 1em;
+    }
 }
