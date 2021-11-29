@@ -1,10 +1,11 @@
 
 #testimonios-title{ 
-	/* height: 1.5em;
+	height: 1.5em;
 	padding: 10px;
 	text-align: center;
-	background-color: rgb(21, 21, 21); */
-	font-size: 3em;
+	background-color: #4b0363;
+	width: 100%;
+	font-size: 2.5em;
     color: #dbbf20;
     text-align: center;
     text-transform: uppercase;
@@ -105,15 +106,16 @@ display: none;
     border:10px solid #666;
 }
 .box-art-testimonios h3{
-    margin: 20px;
+    margin: 20px 0	;
+	text-align: center;
     font-size: 1.5em;
     color: tomato;
 }
 .box-testimonios-p{
-    width: 50vw;
+    width: 90vw;
     height: auto;
     color:antiquewhite;
-
+margin-top: 50px	;
 	font-size: 1.5rem;
     text-align: center;
 }
