@@ -110,13 +110,14 @@ display: none;
 	text-align: center;
     font-size: 1.5em;
     color: tomato;
+	margin-top: 50px	;
 }
 .box-testimonios-p{
     width: 90vw;
     height: auto;
     color:antiquewhite;
-margin-top: 50px	;
-	font-size: 1.5rem;
+	margin-top: 50px	;
+	font-size: 1.2rem;
     text-align: center;
 }
 
