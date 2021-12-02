@@ -11,7 +11,6 @@
     background-image: url("/img2/bgmobile.jpg") ;
     background-repeat: no-repeat;
     background-position:left top;   
-    /* background-size: contain;   */
 }
 
 .titulo-principal {
@@ -193,7 +192,9 @@ margin-top: 20px
     .bgimg{
         background: linear-gradient(#4b0363, #1B0043);
         background-image: url("/img2/bg1.jpg") ;
-    background-size: contain;  
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position:left top;   
 }
 
 
