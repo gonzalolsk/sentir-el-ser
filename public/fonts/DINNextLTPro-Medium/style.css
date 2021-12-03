@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Medium'), local('DIN-Next-LT-Pro-Medium'),
+        url('DINNextLTPro-Medium.woff2') format('woff2'),
+        url('DINNextLTPro-Medium.woff') format('woff'),
+        url('DINNextLTPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    src: local('DIN Next LT Pro Italic'), local('DIN-Next-LT-Pro-Italic'),
+        url('DINNextLTPro-Italic.woff2') format('woff2'),
+        url('DINNextLTPro-Italic.woff') format('woff'),
+        url('DINNextLTPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }

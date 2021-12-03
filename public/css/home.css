@@ -11,12 +11,12 @@
     background-image: url("/img2/bg-mobile.jpg") ;
     background-repeat: no-repeat;
     background-position:left top;   
+
 }
 
 .titulo-principal {
     font-size: 3em;
-    font-family: 'Caveat', cursive;
-    color: #dbbf20;
+    color: #fff;
     font-size: 2.2em;
     text-transform: uppercase;
     position:relative;
@@ -25,11 +25,11 @@
 }
 
 .titulo-principal:hover{
-    color: #d6c042;
-    transform  : scale(1.05);
+    /* color: #d6c042; */
 }
 .subtitulo-principal{
-    font-family: 'Caveat', cursive;
+    font-family: 'DIN Next LT Pro';
+    font-weight:lighter;
 }
 .titulo-principal, .subtitulo-principal{
     margin:  auto;
@@ -58,7 +58,8 @@
 }     */
 #titles-box {background: linear-gradient(-45deg, rgb(75, 3, 99,0.6), rgb(75, 3, 99,0.6), rgb(27, 0, 67,0.6), rgb(27, 0, 67,0.6));
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 10s ease infinite;
+    padding: 20px 0
 
 }
 
@@ -120,13 +121,13 @@ margin-top: 20px
     padding-bottom:40px;
     width: 70%
 }
-#register-form h2{
+/* #register-form h2{
     margin: 15px;
     color: crimson;
     font-size: 1.75em;
     text-transform: uppercase;
 
-}
+} */
 #register-form p{
     margin: 10px;
     font-weight: normal;
@@ -186,12 +187,12 @@ margin-top: 20px
 /* =============================================================================================================== */
 /* =================================================Media Queries================================================= */
 /* =============================================================================================================== */
-  
+
 @media (min-width: 850px) {
 
     .bgimg{
-        background: linear-gradient(#4b0363, #1B0043);
-        background-image: url("/img2/bg1.jpg") ;
+    background: linear-gradient(#4b0363, #1B0043);
+    background-image: url("/img2/bg1.jpg") ;
     background-size: cover;  
     background-repeat: no-repeat;
     background-position:left top;   
