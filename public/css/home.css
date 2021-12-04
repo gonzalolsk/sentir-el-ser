@@ -23,10 +23,14 @@
     margin: 0 50px;
     transition:all 300ms
 }
-
-.titulo-principal:hover{
-    /* color: #d6c042; */
+.titulo-principal span {
+    color: #dbbf20;
+    font-style: 2rem;
 }
+
+/* .titulo-principal:hover{
+    color: #d6c042;
+} */
 .subtitulo-principal{
     font-family: 'DIN Next LT Pro';
     font-weight:lighter;
@@ -131,19 +135,33 @@ margin-top: 20px
 #register-form p{
     margin: 10px;
     font-weight: normal;
+    font-size: 1.5rem;
+    
 }
 #fildset-register{
     border: none;
     border: 2px solid black;
     border-radius: 4%;
     background-color: rgb(18, 17, 18, 0.5);
-    min-width: 250px;
+    min-width: 300px;
 }
 #fildset-register input{
     width: 190px
 }
 
+#email-input{
+    margin-left:20px;
+    margin-top:15px;
+    outline:none;
+}
 
+#name-input {
+    margin-top: 15px;
+    margin-left:5px;
+}
+#fildset-register{
+
+}
 
 
 .form-input{
@@ -174,8 +192,14 @@ margin-top: 20px
     font-weight: 500;
     padding: 10px 15px;
     text-align: center;
+    transition: all .3s cubic-bezier(.4, 0, .2, 1);
+
 }
 
+#submit-button:hover{
+transform: scale(0.90);
+
+}
 
 
 
@@ -221,24 +245,6 @@ margin-top: 20px
     }
 }
 
-/* -----------------------------min 400----------------------------- */
-@media (min-width: 400px) {
-    #email-input{
-        margin-left:20px;
-        margin-top:15px;
-        outline:none;
-    }
-    
-    #name-input {
-        margin-top: 15px;
-        margin-left:5px;
-    }
-    #fildset-register{
-        min-width: 300px;
-    }
-}
-
-
 
 /* -----------------------------Resoluciones muy pequeñas----------------------------- */
 @media (max-width: 300px) {
@@ -250,5 +256,7 @@ margin-top: 20px
     .titulo-principal ~ .subtitulo-principal{
         font-size: 0.8em;
     }
-
+    #fildset-register{
+        min-width: 250px;
+    }
 }
