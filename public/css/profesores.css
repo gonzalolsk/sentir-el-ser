@@ -148,7 +148,7 @@ color: #e2e8f0
     .profe-descripcion{
 
         text-align: justify;
-        width: 100%;
+        width: 80%;
         color:antiquewhite;
         line-height: 2em;
         padding: 30px 30px 0;
@@ -174,5 +174,8 @@ color: #e2e8f0
  display: flex;
  justify-content:space-between
 } */
-
+#section-profesores{
+    display: flex;
+    justify-content: center;
+}
 }

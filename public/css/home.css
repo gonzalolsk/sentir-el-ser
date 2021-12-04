@@ -60,7 +60,7 @@
     width: 100%;
     padding: 70px 0;
 }     */
-#titles-box {background: linear-gradient(-45deg, rgb(75, 3, 99,0.6), rgb(75, 3, 99,0.6), rgb(27, 0, 67,0.6), rgb(27, 0, 67,0.6));
+#titles-box {background: linear-gradient(-45deg, rgb(75, 3, 99,0.85), rgb(75, 3, 99,0.85), rgb(27, 0, 67,0.85), rgb(27, 0, 67,0.85));
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
     padding: 20px 0
