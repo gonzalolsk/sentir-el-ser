@@ -109,7 +109,7 @@ background-color: #4b0363;
     align-items: center;   
     background: linear-gradient(#4b0363, rgb(191, 126, 218));
     width: 350px;
-    height: 580px;
+    height: 600px;
     margin: 20px 50px;
     padding:10px;
     border: 1px solid black;
@@ -117,14 +117,9 @@ background-color: #4b0363;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
     position:relative;
 }
-.last{
-    justify-self: left ;
-}
 
 .art-seminarios h2{
-    /* width: 95%;
-    padding:8px; */
-    line-height: 150%; 
+    font-size: 1.2rem;
     margin: 10px 0;
     border-bottom: #ffb347 3px solid;
     text-align: center;
