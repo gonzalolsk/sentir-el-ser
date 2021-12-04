@@ -30,7 +30,7 @@
     align-items: center;
     }
 .art-formaciones img{
-    width: 400px ;
+    width: 360px ;
 }
 .art-formaciones h2{
     font-size: 1.3em;
@@ -246,7 +246,9 @@ letter-spacing: 0.2rem;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
     position:relative
 }
-
+.art-formaciones img{
+    width: 98% ;
+}
 
 
 } 
