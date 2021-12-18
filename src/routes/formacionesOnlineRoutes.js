@@ -6,7 +6,7 @@ const formacionesOnlineController = require("../controllers/formacionesOnlineCon
 router.get('/masterclass', formacionesOnlineController.masterclass);
 router.get('/seminarios', formacionesOnlineController.seminarios);
 router.get('/formacion', formacionesOnlineController.formacion);
-router.get('/', formacionesOnlineController.formacionesOnline);
+// router.get('/', formacionesOnlineController.formacionesOnline);
 
 
 module.exports = router;

@@ -146,7 +146,7 @@ background-color: #4b0363;
 .button{
     text-decoration: none;
     min-width: 180px;
-    height: 35px;   
+    height: 49px;
     font-weight: bold;
     text-align: center;
     letter-spacing: 0.1em;
@@ -157,7 +157,7 @@ background-color: #4b0363;
     padding: 10px 10px;
     transition: 0.3s;
     background-size: 200% auto;
-    color: white;            
+    color: white;
     box-shadow: 0 0 10px #eee;
     border: 0px solid;
     border-radius: 10px;
@@ -165,7 +165,7 @@ background-color: #4b0363;
     align-items: center;
     justify-content: center;
     position:absolute;
-    bottom:0
+    bottom: 16px;
 }
 
 
