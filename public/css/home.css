@@ -55,11 +55,6 @@
     font-size: 1em;
 }
 
-/* #titles-box{     
-    background-image: url("/img/banner-universo.jpg");
-    width: 100%;
-    padding: 70px 0;
-}     */
 #titles-box {background: linear-gradient(-45deg, rgb(75, 3, 99,0.85), rgb(75, 3, 99,0.85), rgb(27, 0, 67,0.85), rgb(27, 0, 67,0.85));
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
@@ -159,10 +154,6 @@ margin-top: 20px
     margin-top: 15px;
     margin-left:5px;
 }
-#fildset-register{
-
-}
-
 
 .form-input{
     padding: 5px;
@@ -178,7 +169,7 @@ margin-top: 20px
 
 #submit-button{
     background-color: green;
-    width: 100%;
+    width: 40%;
     height: 45px;   
     color: #f5f5f5;
     margin-left: 6px;

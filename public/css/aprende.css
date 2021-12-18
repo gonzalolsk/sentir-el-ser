@@ -1,11 +1,12 @@
-#title-aprende{ font-size: 2em;
-    color: #dbbf20;
+#title-aprende{ 
+    font-size: 2em;
+    color: #fff;
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
-    padding-top: 10px;
+    padding: 10px;
     text-align: center;
-
+    background-color: #1B0043;
 }
 
 #aprende-section {
