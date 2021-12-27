@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 
 #testimonios-title{ 
 	height: 1.5em;
@@ -27,9 +34,15 @@
 /* ------------------------------------------------------------------Carousel */
 
 #box-carousel{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	/* min-height: 100vh; */
 	background-color: rgb(21, 21, 21);
 	padding: 1rem;
@@ -37,12 +50,23 @@
 #carousel {
     background-color: rgb(53, 11, 92);
 	height: 130vh;
-	flex: 1 0 100%;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 0 100%;
+	        flex: 1 0 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	flex-flow: row wrap;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
 	position: relative;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	overflow: hidden;
 }
 #carousel nav {
@@ -50,21 +74,33 @@
 	z-index: 5;
 	width: 100%;
 	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 #carousel nav a {
-	flex: 1 0 auto;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 0 auto;
+	        flex: 1 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 1rem;
 	text-decoration: none;
 	color: snow;
 }
 
 #carousel nav a:last-child {
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
 
 #carousel nav a i {
@@ -83,25 +119,45 @@ display: none;
 	max-width: 100%;
 }
 #wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
 }
 #wrapper .slide-container {
-	flex: 1 0 100%;
-	order: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 0 100%;
+	        flex: 1 0 100%;
+	-webkit-box-ordinal-group: 2;
+	    -ms-flex-order: 1;
+	        order: 1;
 	opacity: 0;
+	-webkit-transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
 	transition: all 1s ease-out;
 }
 
 #wrapper .slide-container.active {
 	opacity: 1;
-	order: 0;
+	-webkit-box-ordinal-group: 1;
+	    -ms-flex-order: 0;
+	        order: 0;
 }
 .box-art-testimonios{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-bottom: 50px;  
 }
 .box-art-testimonios h3{
@@ -143,22 +199,36 @@ display: none;
 
 #carousel {
 	height: 80vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 #carousel ul {
     position:absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 	z-index: 10;
 	width: 25%;
 	height: 2rem;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
     bottom: 0.3rem
 }
 #carousel ul li {
-	flex: 1 0 auto;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 0 auto;
+	        flex: 1 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	pointer-events: all;
 	cursor: pointer;
 }

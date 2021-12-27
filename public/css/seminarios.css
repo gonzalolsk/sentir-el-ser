@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 	border: none;
@@ -16,18 +24,32 @@
 
 #formaciones-box{
     background-color:rgb(191, 126, 218); 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .art-formaciones {
     width:95%;
     margin: 25px;
     border-radius: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction:column;
-    align-items: center;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     }
 .art-formaciones img{
     width: 360px ;
@@ -61,9 +83,15 @@ margin-top: 0;
 }
 
 #separador {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content:center;
-    align-items:center;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
     margin:10px
 
 }
@@ -74,10 +102,19 @@ color: #1B0043
 }
 
 #section-seminarios{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;   
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;   
         padding:50px 20px
 }
 
@@ -96,17 +133,35 @@ background-color: #4b0363;
 } */
 
 .art-a{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
 }
 
 .art-seminarios{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;   
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;   
+    background: -webkit-gradient(linear, left top, left bottom, from(#4b0363), to(rgb(191, 126, 218)));   
+    background: -o-linear-gradient(#4b0363, rgb(191, 126, 218));   
     background: linear-gradient(#4b0363, rgb(191, 126, 218));
     width: 350px;
     height: 600px;
@@ -114,7 +169,8 @@ background-color: #4b0363;
     padding:10px;
     border: 1px solid black;
     border-radius: 10px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
     position:relative;
 }
 
@@ -152,18 +208,29 @@ background-color: #4b0363;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     cursor: pointer;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ffb347), color-stop(50%, #ffcc33), to(#ffb347));
+    background-image: -o-linear-gradient(left, #ffb347 0%, #ffcc33  50%, #ffb347  100%);
     background-image: linear-gradient(to right, #ffb347 0%, #ffcc33  50%, #ffb347  100%);
     margin: 10px;
     padding: 10px 10px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     background-size: 200% auto;
     color: white;
-    box-shadow: 0 0 10px #eee;
+    -webkit-box-shadow: 0 0 10px #eee;
+            box-shadow: 0 0 10px #eee;
     border: 0px solid;
     border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position:absolute;
     bottom: 16px;
 }
@@ -173,7 +240,9 @@ background-color: #4b0363;
     background-position: right center;
     color: rgb(39, 36, 36);;
     text-decoration: none;
-    transform: scale(1.05); 
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); 
 }
 
 
@@ -189,10 +258,14 @@ background-color: #4b0363;
         font-size: 1.5rem;
     }
 #section-seminarios{
+    display: -ms-grid;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, -webkit-max-content));
     grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
     grid-gap: 16px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: initial;
 }
 
@@ -204,13 +277,18 @@ background-color: #4b0363;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+-webkit-transition:all 300ms;
+-o-transition:all 300ms;
 transition:all 300ms;
 padding: 5px;
 }
 
 .art-seminarios:hover{
-    transform:scale(1.07);
-    box-shadow:none
+    -webkit-transform:scale(1.07);
+        -ms-transform:scale(1.07);
+            transform:scale(1.07);
+    -webkit-box-shadow:none;
+            box-shadow:none
 }
 
 
@@ -234,9 +312,16 @@ letter-spacing: 0.2rem;
 @media (max-width: 360px) {
 
 .art-seminarios{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: rgb(255, 255, 255);
     width: 98%;
     height: 550px;
@@ -244,7 +329,8 @@ letter-spacing: 0.2rem;
     padding:10px;
     border: 1px solid black;
     border-radius: 4px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
     position:relative
 }
 .art-formaciones img{

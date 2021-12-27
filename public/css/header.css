@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 
 *{
     font-family: 'DIN Next LT Pro';
@@ -6,13 +13,24 @@
 /*********************************************** HEADER MOBILE ***********************************************/
 header{
     background-color: #210629;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
     padding: 5px;
-    box-shadow: 0px 0px 10px rgba(71, 6, 71, 0.6);
+    -webkit-box-shadow: 0px 0px 10px rgba(71, 6, 71, 0.6);
+            box-shadow: 0px 0px 10px rgba(71, 6, 71, 0.6);
 }
 a{
     text-decoration:none
@@ -54,6 +72,8 @@ a{
 
 #menuNav{
     display: none;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
     margin-right:10vw;
 
@@ -69,9 +89,15 @@ a{
     background-color: #F5E078;
     border: solid #F5E078 1px;
     border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #exitMenu .exit{
@@ -82,9 +108,15 @@ a{
     color: #210629;
     width: 10vw;
     height: 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: absolute;
     top: 3.5vh;
     right: 1vw;
@@ -93,11 +125,15 @@ a{
 #burgerMenu .burguer:hover{
     background-color: #A78B48;
     border: solid #A78B48 1px;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
     transition: all 0.25s;
 }
 
 #menuNav:target{
     font-size: 1.3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: fixed;
     width: 79vw; 
@@ -106,9 +142,16 @@ a{
     top: 0;
     right: 0;
     z-index: 2;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center; 
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
     padding-left: 20px;
 }
 
@@ -190,10 +233,18 @@ a{
     .mainNav{
         margin-top:13px;
         width: 45vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-line-pack: center;
+            align-content: center;
     }
 
     .mainNav li>a{
@@ -217,9 +268,16 @@ a{
     .mainNav>li:hover>ul {
         
         position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         background-color: rgba(33, 6, 41,0.95);
         border: 2px solid black;
         padding:15px;
@@ -276,8 +334,12 @@ a{
     } */
 
     #social-div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 #social-div i{
 
@@ -286,6 +348,8 @@ a{
 
 .facebook-hf{
     color:#F5E078;
+    -webkit-transition: all 300 ms;
+    -o-transition: all 300 ms;
     transition: all 300 ms
 }
 .facebook-hf:hover{
@@ -293,6 +357,8 @@ a{
 }
 .instagram-hf{
     color:#F5E078;
+    -webkit-transition: all 300 ms;
+    -o-transition: all 300 ms;
     transition: all 300 ms
 }
 .instagram-hf:hover{
@@ -311,7 +377,8 @@ a{
 
     .mainNav{
         width: 50%;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
 

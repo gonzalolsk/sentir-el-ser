@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 #title-aprende{ 
     font-size: 2em;
     color: #fff;
@@ -14,10 +21,19 @@
     /* background-color: rgb(133, 96, 177); */
 }
 #box-aprende{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 20px;
 }
 #aprende1{
@@ -34,10 +50,19 @@
 }
 
 .box-art-aprende{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 15px;
     padding:15px 0;
     border: 1px solid antiquewhite;
@@ -50,10 +75,14 @@
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+-webkit-transition: all 300ms;
+-o-transition: all 300ms;
 transition: all 300ms
 }
 .box-art-aprende:hover{
-    transform: scale(1.05); 
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); 
 }
 
 .box-art-aprende{
@@ -61,7 +90,9 @@ transition: all 300ms
 }
 #box-aprende p  {
     color: antiquewhite;    
-    align-items: justify;
+    -webkit-box-align: justify;    
+        -ms-flex-align: justify;    
+            align-items: justify;
     margin: 0 20px;
 position: absolute;
 top: 260px;
@@ -90,9 +121,16 @@ text-align: center;
 @media (min-width: 1100px) {
 
 #box-aprende{
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .box-art-aprende{
     padding:0;
