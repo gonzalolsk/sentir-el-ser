@@ -7,4 +7,6 @@ router.get('/', mainController.home);
 router.get('/sobre-nosotros', mainController.aboutUs);
 // router.get('/formaciones', mainController.formaciones)
 
+
+router.get('/testimonios', mainController.testimonios);
 module.exports = router;

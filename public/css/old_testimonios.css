@@ -1,0 +1,259 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+
+#testimonios-title{ 
+	height: 1.5em;
+	padding: 10px;
+	text-align: center;
+	background-color: #4b0363;
+	width: 100%;
+	font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    /* margin-top: 20px; */
+    text-align: center;
+
+	/* width: 100%;
+	font-size: 2em;
+    color: #1B0043;
+    text-align: center;
+    margin-bottom: -20px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;  */
+}
+
+
+/* ------------------------------------------------------------------Carousel */
+
+#box-carousel{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	/* min-height: 100vh; */
+	background-color: rgb(21, 21, 21);
+	padding: 1rem;
+}
+#carousel {
+    background-color: rgb(53, 11, 92);
+	height: 130vh;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 0 100%;
+	        flex: 1 0 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	position: relative;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	overflow: hidden;
+}
+#carousel nav {
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+#carousel nav a {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 0 auto;
+	        flex: 1 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 1rem;
+	text-decoration: none;
+	color: snow;
+}
+
+#carousel nav a:last-child {
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+
+#carousel nav a i {
+	background-color: tomato;
+	padding: 1rem;
+	font-size: 1rem;
+	border-radius: 2rem;
+}
+
+#carousel ul {
+display: none;
+}
+
+
+#carousel img {
+	max-width: 100%;
+}
+#wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+}
+#wrapper .slide-container {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 0 100%;
+	        flex: 1 0 100%;
+	-webkit-box-ordinal-group: 2;
+	    -ms-flex-order: 1;
+	        order: 1;
+	opacity: 0;
+	-webkit-transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+}
+
+#wrapper .slide-container.active {
+	opacity: 1;
+	-webkit-box-ordinal-group: 1;
+	    -ms-flex-order: 0;
+	        order: 0;
+}
+.box-art-testimonios{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 50px;  
+}
+.box-art-testimonios h3{
+	max-width: 100px;
+	text-align: center;
+}
+
+.box-art-testimonios img{
+    width:200px;
+    height:200px;
+    border-radius:160px;
+    border:10px solid #666;
+}
+.box-art-testimonios h3{
+    margin: 20px 0	;
+	text-align: center;
+    font-size: 1.5em;
+    color: tomato;
+	margin-top: 50px	;
+}
+.box-testimonios-p{
+    width: 90vw;
+    height: auto;
+    color:antiquewhite;
+	margin-top: 50px	;
+	font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+/* =============================================================================================================== */
+/* =================================================Media Queries================================================= */
+/* =============================================================================================================== */
+@media (min-width: 850px) {
+	.box-art-testimonios h3{
+		max-width: none;
+	}
+
+#carousel {
+	height: 80vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+#carousel ul {
+    position:absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	z-index: 10;
+	width: 25%;
+	height: 2rem;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+    bottom: 0.3rem
+}
+#carousel ul li {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 0 auto;
+	        flex: 1 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	pointer-events: all;
+	cursor: pointer;
+}
+
+#carousel ul li i {
+	color: snow;
+	width: 2rem;
+	font-size: 1rem;
+	padding: 0.5rem;
+}
+
+#carousel ul li.active i {
+	background-color: tomato;
+	border-radius: 2rem;
+}
+
+}
+
+/* -----------------------------Resoluciones muy pequeñas----------------------------- */
+@media (max-width: 300px) {
+	#carousel {
+
+		height: 150vh;
+
+
+}
+
+}
