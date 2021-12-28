@@ -1,0 +1,52 @@
+.profesor{
+
+}
+
+
+.box-profesores{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 20px 20px 20px;
+}
+
+#profe-img-santi{
+    width:200px;
+    height:200px;
+    border-radius:160px;
+    border:10px solid #666;
+    -webkit-transition:all 300ms;
+    -o-transition:all 300ms;
+    transition:all 300ms
+}
+#profe-img-santi:hover {
+    -webkit-filter: saturate(110%);
+            filter: saturate(110%);
+    -webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1);
+    overflow:hidden;
+}
+#profe-img-mica{
+    width:200px;
+    height:200px;
+    border-radius:160px;
+    border:10px solid #666;
+    -webkit-transition:all 300ms;
+    -o-transition:all 300ms;
+    transition:all 300ms
+}
+#profe-img-mica:hover {
+    -webkit-filter: saturate(110%);
+            filter: saturate(110%);
+    -webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1);
+    overflow:hidden;
+}

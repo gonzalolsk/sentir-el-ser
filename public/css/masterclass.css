@@ -69,7 +69,7 @@
     /* border-radius: 11px; */
 }
 .art-formaciones p{
-    margin: 0 20px;
+    margin: 0px 100px;
     margin-bottom: 20px;
     color: #fff;
     letter-spacing: 0.1em;
@@ -303,7 +303,8 @@ background-color: #4b0363;
 .art-formaciones p{
     font-size: 1.3rem;
     text-align: justify;
-    line-height: 1.8em;
+    line-height: 1.8em; 
+    margin: 0 150px;
 }
 .art-formaciones h2{ 
     font-size: 2rem;

@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
 .bg-about-us{
     background: -webkit-gradient(linear, left top, left bottom, from(#4b0363), to(#1B0043));
     background: -o-linear-gradient(#4b0363, #1B0043);
@@ -28,10 +35,10 @@
 }
 
 .h2-about-us{
-    font-size: 2em;
-    color: #dbbf20;
+    font-size: 2.8em;
+    color: #fff;
     text-align: center;
-    margin: 20px;
+    margin: 35px;
     text-transform: uppercase;
 }
 
@@ -44,22 +51,24 @@
             justify-content: center;
 }
 #escuela-descripcion{
-    text-align: justify;
-    width: 95%;
+    /* text-align: justify; */
+    /* width: 100%; */
     color:antiquewhite;
     line-height: 2em;
-    background-color: rgb(59, 37, 63);
-    padding: 6vw 6vw;
-    font-weight: 600;
-    border-radius: 30px
+    background-color: rgb(61 3 73);
+    font-size: 1.3rem;
+    padding: 6vw 15vw;
+    /* font-weight: 600; */
+    border-radius: 30px;
 }
 #escuela-descripcion span{
     font-weight: bold;
     color:crimson;
     display: block;
-    text-align: center;
+    /* text-align: center; */
     width: 85%;
     margin-left: 9%;
+    margin-bottom: 25px;
 }
 
 /* -----------------------------seccion profesores */
@@ -81,64 +90,79 @@
     margin: 20px
 }
 
-#profe-img-santi{
+#profesores-img-santi{
     width:200px;
     height:200px;
     border-radius:160px;
     border:10px solid #666;
 }
-#profe-img-mica{
+#profesores-img-mica{
     width:200px;
     height:200px;
     border-radius:160px;
     border:10px solid #666;
 }
-.profe-nombre{
+.profesores-nombre{
     font-size: 1.5rem;
     color:antiquewhite;
 }
-.profe-descripcion{
+.profesores-descripcion{
     margin: 20px;
-    text-align: justify;
-    width: 100%;
+    /* text-align: justify; */
+    /* width: 100%; */
     color:antiquewhite;
     line-height: 2em;
     background-color: rgb(61, 3, 73);
-    padding: 30px;
-
+    padding: 30px 15vw;
+    font-size: 1.3rem;
+    border-radius: 40px;
 }
 
-.profe-descripcion span{
+.profesores-descripcion span{
     color: crimson;
 }
-.contacto-profe{
- display: block;
+.contacto-profesores{
  text-align: center;
  margin: 15px;
 }
 
-.contacto-profe a{
-    display: block;
+.contacto-profesores a{
     text-decoration: none;
 }
 .instagram{
     color: crimson;
+    margin: 0 5px;
 }
 .facebook{
     color: blue
 }
-.profe-descripcion span{
+.profesores-descripcion span{
     color: crimson;
     display: block;
-    font-weight: 600;
+    /* font-weight: 600; */
     text-align: center;
     width: 85%;
     margin-left: 9%;
 }
 
 
-
-
+#separador-profesores{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 10px;
+}
+#separador-profesores i {
+font-size: 1em;
+margin: 15px;
+color: #1B0043;
+}
 
 /* =============================================================================================================== */
 /* =================================================Media Queries================================================= */
@@ -154,13 +178,13 @@
     margin: 20px
 }
 
-#profe-img-santi{
+#profesores-img-santi{
     width:200px;
     height:200px;
     border-radius:160px;
     border:10px solid #666;
 }
-#profe-img-mica{
+#profesores-img-mica{
     width:200px;
     height:200px;
     border-radius:160px;

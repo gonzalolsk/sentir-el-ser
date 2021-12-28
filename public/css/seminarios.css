@@ -15,7 +15,7 @@
 
 #titulo-formaciones{
     text-transform: uppercase;
-    color: black;
+    color: #fff;
     font-style: italic;
     text-align: center;
     font-size: 1rem;
@@ -23,18 +23,19 @@
 
 
 #formaciones-box{
-    background-color:rgb(191, 126, 218); 
-    display: -webkit-box; 
-    display: -ms-flexbox; 
+    background-color: rgb(33 6 41);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
+
 
 .art-formaciones {
     width:95%;
@@ -45,37 +46,38 @@
     display: flex;
     -webkit-box-orient:vertical;
     -webkit-box-direction:normal;
-        -ms-flex-direction:column;
-            flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     }
 .art-formaciones img{
     width: 360px ;
 }
 .art-formaciones h2{
     font-size: 1.3em;
-    color: #dbbf20;
+    color: #fff;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: -60px;
+    margin-bottom: 40px;
     text-transform: uppercase;
     background-color: #1B0043;
-    width: 100%;
-    padding: 10px;
-    border-radius: 11px;
+    width: 105%;
+    letter-spacing: 4px;
+    padding: 10px 0;
+    /* border-radius: 11px; */
 }
 .art-formaciones p{
-    margin: 0 20px;
-    margin-bottom: 20px ;
-    color: #4b0363;
+    margin: 0 100px;
+    margin-bottom: 20px;
+    color: #fff;
     letter-spacing: 0.1em;
     line-height: 1.5em;
     font-size: 1rem;
-    text-align: center;
-    font-weight: 600;
-    margin-top: -60px;
+    text-align: left;
+    font-weight: normal;
+    /* margin-top: -60px; */
 }
 
 #art-seminarios{
@@ -155,22 +157,22 @@ background-color: #4b0363;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;   
-    background: -webkit-gradient(linear, left top, left bottom, from(#4b0363), to(rgb(191, 126, 218)));   
-    background: -o-linear-gradient(#4b0363, rgb(191, 126, 218));   
+    -ms-flex-align: center;
+    align-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4b0363), to(rgb(191, 126, 218)));
+    background: -o-linear-gradient(#4b0363, rgb(191, 126, 218));
     background: linear-gradient(#4b0363, rgb(191, 126, 218));
     width: 350px;
-    height: 600px;
+    height: 491px;
     margin: 20px 50px;
     padding:10px;
     border: 1px solid black;
     border-radius: 10px;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
-            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
     position:relative;
 }
 
@@ -185,24 +187,25 @@ background-color: #4b0363;
 
 }
 .art-seminarios img{
-    width: 85%;
+    width: 100%;
+    max-width: 223px;
 }
 
 .art-seminarios p{
-    width: 95%;
+    width: 100%;
     padding:8px;
-    line-height: 150%; 
+    line-height: 150%;
     color: #fff;
     margin: 10px 0;
     text-align: center;
-    font-size: 1.1rem;
-
+    font-size: 1rem;
+    align-items: center;
 }
 
 .button{
     text-decoration: none;
-    min-width: 180px;
-    height: 49px;
+    min-width: 154px;
+    height: 35px;
     font-weight: bold;
     text-align: center;
     letter-spacing: 0.1em;
@@ -219,18 +222,18 @@ background-color: #4b0363;
     background-size: 200% auto;
     color: white;
     -webkit-box-shadow: 0 0 10px #eee;
-            box-shadow: 0 0 10px #eee;
+    box-shadow: 0 0 10px #eee;
     border: 0px solid;
     border-radius: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     position:absolute;
     bottom: 16px;
 }
@@ -245,6 +248,11 @@ background-color: #4b0363;
             transform: scale(1.05); 
 }
 
+/* #formaciones-box:last-child {
+    align-self: start;
+    border: #4b0363 100px;
+    background-color: red
+} */
 
 
 /* =============================================================================================================== */
@@ -257,31 +265,31 @@ background-color: #4b0363;
         text-transform: uppercase;
         font-size: 1.5rem;
     }
-#section-seminarios{
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, -webkit-max-content));
-    grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
-    grid-gap: 16px;
-    -webkit-box-pack: center;
+    #section-seminarios{
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, -webkit-max-content));
+        grid-template-columns: repeat(auto-fit, minmax(348px, max-content));
+        grid-gap: 16px;
+        -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    padding: initial;
-}
-
-.art-seminarios{
-    width: 400px;
-    height: 600px;
-    margin: 20px 0px;
-    border: 1px solid black;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
--webkit-transition:all 300ms;
--o-transition:all 300ms;
-transition:all 300ms;
-padding: 5px;
-}
+        justify-content: center;
+        padding: initial;
+    }
+    
+    .art-seminarios{
+        width: 319px;
+        height: 504px;
+        margin: 20px 0px;
+        border: 1px solid black;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+        -webkit-transition:all 300ms;
+        -o-transition:all 300ms;
+        transition:all 300ms;
+        padding: 11px;
+    }
 
 .art-seminarios:hover{
     -webkit-transform:scale(1.07);
@@ -295,16 +303,13 @@ padding: 5px;
 .art-formaciones p{
     font-size: 1.3rem;
     text-align: justify;
-    line-height: 1.8em;
+    line-height: 1.8em; 
+    margin: 0 150px;
 }
 .art-formaciones h2{ 
     font-size: 2rem;
 }
-.art-seminarios h2{
-font-size: 1.3rem;
-letter-spacing: 0.2rem;
-
-}
+.art-seminarios h2{font-size: 1.2rem;h: 4rem;letter-spacing: 0.2rem;}
 
 }
 
@@ -317,28 +322,29 @@ letter-spacing: 0.2rem;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     background-color: rgb(255, 255, 255);
     width: 98%;
-    height: 550px;
+    height: 490px;
     margin: 20px 50px;
     padding:10px;
     border: 1px solid black;
     border-radius: 4px;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
-            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
-    position:relative
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+    position:relative;
 }
 .art-formaciones img{
     width: 98% ;
 }
-.art-masterclass p{
+.art-seminarios p{
     font-size: 1rem;
 
 }
+
 
 } 
