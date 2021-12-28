@@ -6,6 +6,8 @@ const path = require('path');
 app.set("port", process.env.PORT || 3003);
 app.listen(app.get("port"), () => console.log("Servidor corriendo en http://localhost:" + app.get("port")));
 
+
+
 //View Engine
 app.set('view engine', 'ejs');
 app.set('views', path.resolve(__dirname, './views'));
@@ -22,3 +24,8 @@ const formacionesOnlineRouter = require('./routes/formacionesOnlineRoutes');
 app.use('/', mainRouter);
 app.use('/', profesoresRoutes);
 app.use('/formaciones-online', formacionesOnlineRouter);
+
+//Error 404
+app.get("*", (req,res) => { 
+    res.render("error404")
+})
