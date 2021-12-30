@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%-include ("../includes/head"); %>
+    <title>Login</title>
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+    <!-- ===========================================HEADER===================================================   -->
+    <%-include ("../includes/header"); %>
+    
+    <!-- ======================================MAIN*======================================================= -->
+    <main> 
+      
+      <div id="main-div">
+        
+        <h1 id='titulo-ingresar'>INGRESAR</h1>
+        <p id="texto-ingresa">Ingresa tu email y contraseña</p>
+        <form action="/usuarios/login" method="POST" class= login-form>
+          <fieldset id="login-fieldset">
+            <input
+              type="text"
+              name="email"
+              class="input"
+              value="<%= locals.oldData ? oldData : null%>"
+              placeholder="Email"
+              />
+              <% if (locals.errors && errors.email) { %>
+                <div class="text-danger">
+                  <%= errors.email.msg %> 
+                </div>
+              <% } %>
+              <span class="text-danger"></span>
+            
+            <input
+              type="password"
+              name="password"
+              class="input"
+              placeholder="Contraseña"
+            />
+            <% if (locals.errors && errors.password) { %>
+              <div class="text-danger">
+                <%= errors.password.msg %> 
+              </div>
+            <% } %>
+            <span class="text-danger"></span>
+            <div id="saveUser">
+              <input type="checkbox" name="saveUser">
+              <label for="saveUser">Recordarme</label>
+              
+            </div>
+            
+            <button id="button" type="submit">Ingresar</button>
+          </fieldset>
+        </form>
+        <a id="olvido-pass-enlace" href="$">¿Te olvidaste la contraseña?</a>
+
+      </div>
+      
+      <div class="registro-container">
+        <p>¿No tenés una cuenta en Sentir el Ser?</p>
+        <a href="/usuarios/registro" class="registrate">Registrate</a>
+      </div>
+
+    </main>
+
+
+    <%-include ("../includes/footer"); %>
+
+<script src='/js/loginValidations.js'></script>
+  </body>
+</html>

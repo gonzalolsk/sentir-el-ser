@@ -13,6 +13,12 @@
 /*********************************************** HEADER MOBILE ***********************************************/
 header{
     background-color: #210629;
+    -webkit-box-shadow: 0px 0px 10px rgba(71, 6, 71, 0.6);
+    box-shadow: 0px 0px 10px rgba(71, 6, 71, 0.6);
+    padding: 5px;
+}
+.main-header-container{
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -28,9 +34,8 @@ header{
     -webkit-box-pack:justify;
         -ms-flex-pack:justify;
             justify-content:space-between;
-    padding: 5px;
-    -webkit-box-shadow: 0px 0px 10px rgba(71, 6, 71, 0.6);
-            box-shadow: 0px 0px 10px rgba(71, 6, 71, 0.6);
+
+
 }
 a{
     text-decoration:none
@@ -41,15 +46,15 @@ a{
     min-width: 50px;
 }
 
-/* 
-.search { 
+/*
+.search {
     background-color: white;
     border-radius: 5px;
     padding: 5px 10px;
     color:#30544E;
     width: 50vw;
     margin: auto;
-} 
+}
 
 .search > input:focus {
     outline: none;
@@ -76,7 +81,6 @@ a{
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
     margin-right:10vw;
-
 }
 
 #burgerMenu  .burguer{
@@ -136,7 +140,7 @@ a{
     display: -ms-flexbox;
     display: flex;
     position: fixed;
-    width: 79vw; 
+    width: 79vw;
     height: 100vh;
     background-color: rgba(33, 6, 41,0.95) ;
     top: 0;
@@ -151,7 +155,7 @@ a{
             justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; 
+            align-items: center;
     padding-left: 20px;
 }
 
@@ -195,24 +199,57 @@ a{
 }
 .sub-ul-formaciones, .sub-ul-about{display:none}
 .toggle{
-    display:block; 
+    display:block;
 
 }
 .mainNav>li>ul>li{
     margin: 5px;
     border-bottom: 1px solid black;
-    
+
 }
 
-/* .iconsNav>li>ul{
-    display: none;
+/* #user-nav{
+    display:none;
 } */
+#user-nav{
+    display: block;
+    color: #fff;
+    text-align: right;
+    background-color: indigo;
+    padding: 0 10px;
+}
+#user-nav a{
+    color: #fff;
+    font-size: 0.8rem;
+}
+#user-nav a i{
+    margin-right: 2px;
 
-
+}
+.user-logged-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-logged-container a{
+    margin: 5px;
+     }
 /*********************************************** TABLET ***********************************************/
 @media (min-width: 768px){
 
-    /*********************** HEADER TABLET ***********************/    
+    /*********************** HEADER TABLET ***********************/
+
+    .only-mobile{
+        display: none;
+      }
+
+    #right-nav-container{
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+        justify-content: center;
+    }
+
     .logo{
     margin-left:20px
     }
@@ -266,7 +303,7 @@ a{
     }
 
     .mainNav>li:hover>ul {
-        
+
         position: absolute;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -297,8 +334,8 @@ a{
         align-items: center;
         width: 10vw;
         margin-right: -6vw;
-    } 
-    
+    }
+
     .iconsNav a{
         font-size: 150%;
         color: #F5E078;
@@ -382,166 +419,23 @@ a{
     }
 
 
-    
-    /* .iconsNav{
-        margin: 0px;
-        width: 10%;
-    } */
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ========================================antiguo header ========================================*/
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 15px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-a{
-    text-decoration: none;
-}
-header {
-    background: linear-gradient(#1B0043, #4b0363);
-
-}
-#container-main-header{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-}
-
-#logo{
-    width: 100%;
-    max-width: 170px;
-    min-width: 50px;
-}
-#a-logo{
-    width: 50%;
-    
-    margin-right: 100px;
-
-}
-
-#iburguer {
-    display:block;
-    padding: 8px 8px;
-    background-color: #d8b132;
-    color: #240c31;
-    text-align: center;
-    font-size: 15px;
-    margin: auto;
-}
-
-
-#nav-bar-desktop{
-    display: none;
-}
-
-#nav-bar-mobile{
-    background-color:#d8b132;
-    padding:20px;
-    color: white;
-    cursor:pointer;
-    font-size:1.5em;
-    position: relative;
 
 
 }
 
-#nav-bar-mobile ul li{
-    list-style:none;
-    padding:0;
-    margin:0
-} */
 
 
 
 
-/* -------------------iconos de redes sociales */
-/* #social-section{
-    display: flex;
-    justify-content: space-between;
-}
-#social-section i{
-    margin:10px;
-}
-
-.facebook-hf{
-    color:antiquewhite;
-    transition: all 300 ms
-}
-.facebook-hf:hover{
-    color:rgb(16, 16, 126)
-}
-.instagram-hf{
-    color:antiquewhite;
-    transition: all 300 ms
-}
-.instagram-hf:hover{
-    color:crimson
-} */
 
 
-/* ======================================Media Queries====================================== */
-/* @media (min-width: 880px) {
-    header{
-        padding: 0 20px;
-        max-height: 80px;
-        justify-content: start;
-    }
 
 
-    #nav-bar-desktop{
-        display: block;
-        width: 100%;
-    }
-#nav-bar-mobile{
-    display:none
-}
-    #nav-bar-desktop ul {
-        display: flex;
-        justify-content: start;
-        width:100%;
-    }
-
-    #nav-bar-desktop li{
-        list-style:none;
-        margin: 25px;
-    }
-
-    #nav-bar-desktop li a {
-        color: rgb(229, 216, 235);
-        text-decoration: none;
-        font-size: 1rem;
-        transition: all 100ms;
-    }
-    #nav-bar-desktop li a:hover{
-        border-bottom: 3px solid #f0c949;
-        color: white
 
 
-    }
-    #iburguer {display: none;}
 
 
-} */
+
+
+
+

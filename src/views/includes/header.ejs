@@ -1,44 +1,82 @@
 <!---------------------------------------- HEADER ---------------------------------------->
 <header>
+    <div class="main-header-container"> 
     <a class="a-logo" href='/'>
         <img class='logo' src="/img/logo.png" alt="Logo sentir el ser">
     </a>
 
     <section id='menuNav'>
+            <ul class='mainNav'>
+                <li><a class="submenu-formaciones" href="/formaciones-online">Clases Online <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-ul-formaciones">
+                        <li><a href="/formaciones-online/masterclass"> Masterclass</a></li>
+                        <li><a href="/formaciones-online/seminarios">Seminarios</a></li>
+                        <li><a href="/formaciones-online/formacion">Formación</a></li>
+                    </ul>
+                </li>
+                <li><a class="submenu-about" href="/sobre-nosotros">Sobre Nosotros <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-ul-about">
+                        <li><a href="/sobre-nosotros">Escuela</a></li>
+                        <li><a href="/micaela-prusso">Micaela Prusso</a></li>
+                        <li><a href="/santiago-roldan">Santiago Roldán</a></li>
+                    </ul>
+                </li>
 
-        <ul class='mainNav'>
-            <li><a class="submenu-formaciones" href="/formaciones-online">Clases Online <i class="fas fa-angle-down"></i></a>
-                <ul class="sub-ul-formaciones">
-                    <li><a href="/formaciones-online/masterclass"> Masterclass</a></li>
-                    <li><a href="/formaciones-online/seminarios">Seminarios</a></li>
-                    <li><a href="/formaciones-online/formacion">Formación</a></li>
-                </ul>
-            </li>
-            <li><a class="submenu-about" href="/sobre-nosotros">Sobre Nosotros <i class="fas fa-angle-down"></i></a>
-                <ul class="sub-ul-about">
-                    <li><a href="/sobre-nosotros">Escuela</a></li>
-                    <li><a href="/micaela-prusso">Micaela Prusso</a></li>
-                    <li><a href="/santiago-roldan">Santiago Roldán</a></li>
-                </ul>
-            </li>
+                <li><a href='#'>Blog</a>
+            
+                </li>
 
-            <li><a href='#'>Blog</a>
+                <li><a href='#'>Ayuda</a></li>
+                <!-- <% if (locals.isLogged) { %>
+                    <a href="/usuarios/perfil/<%= + locals.isLogged.id %>"><li><span id="saludo-span"><i class="fas fa-hand-sparkles"></i><p id="saludo">¡Hola, <%= locals.isLogged.first_name %>! </p></span></li></a>
+                    <li><a href='/usuarios/logout'><i class="fas fa-sign-in-alt"></i>Cerrar Sesión</a></li>
+                    
+                    <% } else{ %>
+                        <li class="only-mobile"> <a href="/usuarios/login"><i class="fas fa-sign-in-alt"></i>ingresar</a></li>                            
+                    <% }%> -->
+
+            </ul>
+
+    <div id="right-nav-container">
+
+        <div id="social-div">
+            <a target="_blank" href="https://www.instagram.com/sentirelser"><i class="instagram-hf fab fa-instagram"></i></a>
+            <a target="_blank" href="https://www.facebook.com/sentirelser"><i class="facebook-hf fab fa-facebook"></i></a>
+        </div>
+
+
+    </div>
+    
+    
+    
+    <a href='' id='exitMenu'><i class=" exit fas fa-times"></i></a>
+    
+</section>
+
+
+<a href='#menuNav' id='burgerMenu'><i class=" burguer fas fa-bars"></i></a>
+</div>
+
+<div id="user-nav">
+    <% if (locals.isLogged) { %>
+        <div class="user-logged-container">
+            <a href="/usuarios/perfil/<%= + locals.isLogged.id %>"><span id="saludo-span"><p id="saludo">¡Hola, <%= locals.isLogged.first_name %>! </p></span></a>
+            <a href='/usuarios/logout'><i class="fas fa-sign-in-alt"></i>Cerrar Sesión</a>
+        </div>
         
-            </li>
-
-            <li><a href='#'>Ayuda</a></li>
-        </ul>
-
-            <div id="social-div">
-                <a target="_blank" href="https://www.instagram.com/sentirelser"><i class="instagram-hf fab fa-instagram"></i></a>
-                <a target="_blank" href="https://www.facebook.com/sentirelser"><i class="facebook-hf fab fa-facebook"></i></a>
-            </div>
-
-        <a href='' id='exitMenu'><i class=" exit fas fa-times"></i></a>
-    </section>
+        <% } else{ %>
+            <a href="/usuarios/login"><i class="fas fa-sign-in-alt"></i>ingresar</a>
+            <% }%>
+    
+</div>
 
 
-    <a href='#menuNav' id='burgerMenu'><i class=" burguer fas fa-bars"></i></a>
+
+
+
+
+
+
 <script src="/js/header.js"></script>
 </header>
 
