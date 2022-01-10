@@ -6,10 +6,10 @@
     <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="/css/normalize.css" type="text/css"/>
     <link rel="stylesheet" href="/css/formaciones.css">
-    <link rel="stylesheet" href="/css/profesores.css">
-    <link rel="stylesheet" href="/css/aprende.css">
+    <link rel="stylesheet" href="/css/include-profesores.css">
+    <link rel="stylesheet" href="/css/include-aprende.css">
     <link rel="stylesheet" href="/css/include-formaciones.css">
-    <link rel="stylesheet" href="/css/testimonios.css">
+    <link rel="stylesheet" href="/css/include-testimonios.css">
     <link rel="stylesheet" href="/css/seminarios.css">
   </head>
   <body>
@@ -20,8 +20,17 @@
     <main>
       <h3 id="accede-title">ACCEDE AHORA MISMO A NUESTROS SEMINARIOS</h3>
       <section id="section-seminarios">
-
+        <% seminarios.forEach(seminario => {%>
         <article class="art-seminarios">
+          <a class="art-a" target="_blank" href="<%=seminario.link%>">
+          <h2><%=seminario.name%></h2>
+          <img src=" /img/formaciones/<%=seminario.img%>" alt="seminarios secretos familiares">
+          <p><%=seminario.description%></p>
+            <a class="button" href="<%=seminario.link%>">Mas Info</a>
+          </a>
+        </article>
+        <%});%>
+        <!-- <article class="art-seminarios">
           <a class="art-a" target="_blank" href="https://sentirelser.mitiendanube.com/productos/seminario-online-arbol-genealogico/">
           <h2>Transgeneracional</h2>
           <img src="/img/formaciones/seminario-arbol-genealogico.png" alt="seminarios secretos familiares">
@@ -64,7 +73,7 @@
             Lanzamiento 19/11</p>
             <a class="button" href="https://sentirelser.mitiendanube.com/productos/seminario-de-inteligencia-emocional/">Mas Info</a>
           </a>
-        </article>
+        </article> -->
 
       </section>
         <section id="formaciones-box">

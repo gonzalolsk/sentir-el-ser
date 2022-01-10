@@ -8,8 +8,6 @@ const cors = require('cors')
 const userLoggedMiddlewares = require('./middlewares/userLoggedMiddlewares');
 
 
-
-
 //Server Start 
 app.set("port", process.env.PORT || 3003);
 app.listen(app.get("port"), () => console.log("Servidor corriendo en http://localhost:" + app.get("port")));
@@ -43,11 +41,13 @@ const mainRouter = require('./routes/mainRoutes');
 const profesoresRoutes = require('./routes/profesoresRoutes');
 const formacionesOnlineRouter = require('./routes/formacionesOnlineRoutes');
 const userRouter = require('./routes/userRoutes');
+const adminRouter = require('./routes/adminRoutes');
 
 app.use('/', mainRouter);
 app.use('/', profesoresRoutes);
 app.use('/formaciones-online', formacionesOnlineRouter);
 app.use("/usuarios", userRouter);
+app.use("/admin", adminRouter);
 
 //Error 404
 app.use((req, res, next) => { res.status(404).render('error404'); }) 

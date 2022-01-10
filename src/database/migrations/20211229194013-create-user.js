@@ -21,11 +21,20 @@ module.exports = {
       password: {
         type: Sequelize.STRING
       },
-      admin: {
-        type: Sequelize.BOOLEAN
-      },
       birth_date: {
         type: Sequelize.DATE
+    },
+      admin: {
+          type: Sequelize.BOOLEAN,
+          defaultValue: 0
+      },
+      products_purchased:{
+        type: Sequelize.STRING,
+        allowNull: true,
+        references: {
+          model: "Products",
+          key: "id"
+        },
       },
       created_at: {
         allowNull: false,

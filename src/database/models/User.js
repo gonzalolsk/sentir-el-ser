@@ -14,12 +14,16 @@ module.exports = function (sequelize, dataTypes)  {
       password: {
           type: dataTypes.STRING
       },
+      birth_date: {
+        type: dataTypes.DATE
+    },
       admin: {
           type: dataTypes.BOOLEAN,
           defaultValue: 0
       },
-      birth_date: {
-          type: dataTypes.DATE
+      products:{
+        type: dataTypes.STRING,
+        allowNull: true,
       },
       created_at: {
         type: dataTypes.DATE,
@@ -39,6 +43,12 @@ module.exports = function (sequelize, dataTypes)  {
   
   let User = sequelize.define(alias, cols, config);
   
+  User.associate = (models) => {
+    Product.hasMany(models.Shopping,{
+      as: "shoppings",
+      foreignKey: "id"
+    })
+  }
   return User;
   
   }
