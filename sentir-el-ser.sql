@@ -2,25 +2,25 @@ DROP DATABASE IF EXISTS sentir_el_ser_db;
 CREATE DATABASE sentir_el_ser_db;
 USE sentir_el_ser_db;
 
-DROP TABLE IF EXISTS `users`;
-CREATE TABLE `users` (
-  `id` INT AUTO_INCREMENT NOT NULL,
-  `first_name` varchar(20) NOT NULL,
-  `last_name` varchar(20) NOT NULL,
-  `email` varchar(24) NOT NULL,
-  `password` varchar(95) NOT NULL,
-  `admin` TINYINT (1) NOT NULL DEFAULT 0,
-  `img` varchar(95) DEFAULT NULL,
-  `birth_date` date NOT NULL,
-  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` datetime DEFAULT CURRENT_TIMESTAMP,
-  `condiciones` TINYINT (1) NOT NULL,
-  `baja` TINYINT (1) DEFAULT 0,
-  `products_purchaced` TINYINT (1) DEFAULT NULL, 
-  PRIMARY KEY (`id`)
-  FOREIGN KEY (`product_purchaced`) REFERENCES `products` (`id`),
-) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 
+DROP TABLE IF EXISTS `product_type`;
+CREATE TABLE `product_type`(
+    `id` INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    `name` varchar(50) NOT NULL,
+    `long_description` text DEFAULT NULL,
+    `short_description` text DEFAULT NULL,
+);
+
+DROP TABLE IF EXISTS `teachers`;
+CREATE TABLE `teachers`(
+    `id` INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    `first_name` varchar(20) NOT NULL,
+    `last_name` varchar(20) NOT NULL,
+    `long_description` text DEFAULT NULL,
+    `short_description` text DEFAULT NULL,
+    `img` varchar(255) DEFAULT NULL,
+
+);
 
 DROP TABLE IF EXISTS `products`;
 create table `products` (
@@ -42,28 +42,33 @@ create table `products` (
   FOREIGN KEY (`teacher_id`) REFERENCES `teachers` (`id`),
 );
 
-DROP TABLE IF EXISTS `product_type`;
-CREATE TABLE `product_type`(
-    `id` INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    `name` varchar(50) NOT NULL
-    `long_description` text DEFAULT NULL,
-    `short_description` text DEFAULT NULL,
-);
 
-DROP TABLE IF EXISTS `teachers`;
-CREATE TABLE `teachers`(
-    `id` INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    `first_name` varchar(20) NOT NULL,
-    `last_name` varchar(20) NOT NULL,
-    `long_description` text DEFAULT NULL,
-    `short_description` text DEFAULT NULL,
-    `img` varchar(255) DEFAULT NULL,
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` INT AUTO_INCREMENT NOT NULL,
+  `first_name` varchar(20) NOT NULL,
+  `last_name` varchar(20) NOT NULL,
+  `email` varchar(24) NOT NULL,
+  `password` varchar(95) NOT NULL,
+  `admin` TINYINT (1) NOT NULL DEFAULT 0,
+  `img` varchar(95) DEFAULT NULL,
+  `birth_date` date NOT NULL,
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime DEFAULT CURRENT_TIMESTAMP,
+  `condiciones` TINYINT (1) NOT NULL,
+  `baja` TINYINT (1) DEFAULT 0,
+  `products_purchaced` TINYINT (1) DEFAULT NULL, 
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`products_purchaced`) REFERENCES `products` (`id`),
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 
-);
+
+
+
 
 DROP TABLE IF EXISTS `shopping_cart`;
 CREATE TABLE `shopping_cart` (
-	`id` 			INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   	`user_id` 		INT	NOT NULL,
   	`products_id`	INT UNSIGNED NOT NULL,
   	`created_at`	TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -76,6 +81,13 @@ CREATE TABLE `shopping_cart` (
   	FOREIGN KEY (`products_id`) REFERENCES `products`(`id`)
 );
 
+DROP TABLE IF EXISTS `post_category`;
+CREATE TABLE `post_category`(
+    `id` INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    `name` varchar(50) NOT NULL,
+  	PRIMARY KEY (`id`),
+);
+
 DROP TABLE IF EXISTS `blog_posts`;
 CREATE TABLE `blog_posts`(
     `id` INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -83,14 +95,14 @@ CREATE TABLE `blog_posts`(
     `brief` text DEFAULT NULL,
     `content` text DEFAULT NULL,
     `img` varchar(255) DEFAULT NULL,
-    `category_id` INT UNSIGNED not null,
+    `post_category_id` INT UNSIGNED not null,
     `teacher_id` INT UNSIGNED not null,
     `comments_id` text DEFAULT NULL,
     `created_at` TIMESTAMP default CURRENT_TIMESTAMP,
     `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
   	PRIMARY KEY (`id`),
-  	FOREIGN KEY (`category_id`) REFERENCES	`category` (`id`),
+  	FOREIGN KEY (`post_category_id`) REFERENCES	`post_category` (`id`),
   	FOREIGN KEY (`teacher_id`) REFERENCES `teacher`(`id`)
 );
 
@@ -110,9 +122,3 @@ CREATE TABLE `comments`(
 );
 
 
-DROP TABLE IF EXISTS `post_category`;
-CREATE TABLE `post_category`(
-    `id` INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    `name` varchar(50) NOT NULL
-  	PRIMARY KEY (`id`),
-);
