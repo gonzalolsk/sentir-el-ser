@@ -15,10 +15,10 @@
 
 
 .bgimg{
-        background: -webkit-gradient(linear, left top, left bottom, from(#4b0363), to(#1B0043));
+        /* background: -webkit-gradient(linear, left top, left bottom, from(#4b0363), to(#1B0043));
         background: -o-linear-gradient(#4b0363, #1B0043);
-        background: linear-gradient(#4b0363, #1B0043);
-    background-image: url("/img2/bg-mobile.jpg") ;
+        background: linear-gradient(#4b0363, #1B0043); */
+    /* background-image: url("/img2/bg-mobile.jpg") ; */
     background-repeat: no-repeat;
     background-position:left top;   
 
@@ -122,11 +122,8 @@ margin-top: 20px
 }
 
 #video-y-form {
-
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -141,10 +138,14 @@ margin-top: 20px
 }
 #pie-video{
     font: size 1.3em;
-    font-weight:600;
+    font-weight: 600;
+    border-radius: 4px;
     color: rgb(229, 216, 235);
-    text-transform:uppercase;
-    margin-top:10px
+    text-transform: uppercase;
+    margin-top: 10px;
+    background-color: green;
+    display: inline-block;
+    padding: 5px 10px;
 }
 /* =================formulario================= */
 #register-form{
@@ -177,7 +178,8 @@ margin-top: 20px
     border: none;
     border: 2px solid black;
     border-radius: 4%;
-    background-color: rgb(18, 17, 18, 0.5);
+    /* background-color: rgb(18, 17, 18, 0.5); */
+    background-color: rgba(27, 0, 67,0.9);
     min-width: 300px;
 }
 #fildset-register input{
@@ -206,7 +208,6 @@ margin-top: 20px
     font-size: 1.2em;
     font-weight: 600;
 }
-
 #submit-button{
     background-color: green;
     width: 40%;
@@ -226,7 +227,6 @@ margin-top: 20px
     -webkit-transition: all .3s cubic-bezier(.4, 0, .2, 1);
     -o-transition: all .3s cubic-bezier(.4, 0, .2, 1);
     transition: all .3s cubic-bezier(.4, 0, .2, 1);
-
 }
 
 #submit-button:hover{
@@ -250,10 +250,10 @@ margin-top: 20px
 @media (min-width: 850px) {
 
     .bgimg{
-    background: -webkit-gradient(linear, left top, left bottom, from(#4b0363), to(#1B0043));
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#4b0363), to(#1B0043));
     background: -o-linear-gradient(#4b0363, #1B0043);
     background: linear-gradient(#4b0363, #1B0043);
-    background-image: url("/img2/bg1.jpg") ;
+    background-image: url("/img2/bg1.jpg") ; */
     background-size: cover;  
     background-repeat: no-repeat;
     background-position:left top;   
