@@ -241,5 +241,7 @@ article.art-formacion.lista.modulos li {
 @media (max-width: 576px){
     #formacion-box p, #formacion-box li{
         font-size: 1.3rem;
-        /* hyphens: auto; */
+        /* hyphens: auto;
+        -webkit-hyphens: auto; */
+    }
 }
