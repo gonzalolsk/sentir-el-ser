@@ -7,7 +7,7 @@
 
 * {
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .art-formacion{
@@ -68,6 +68,7 @@ article.art-formacion.lista.modulos li {
 #img-formacion{
     width:60%;
     text-align:center;
+    min-width: 340px;
 }
 
 .big-text{
@@ -234,3 +235,11 @@ article.art-formacion.lista.modulos li {
 
 
 
+
+
+
+@media (max-width: 576px){
+    #formacion-box p, #formacion-box li{
+        font-size: 1.3rem;
+        /* hyphens: auto; */
+}
