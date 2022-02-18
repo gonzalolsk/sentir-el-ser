@@ -7,7 +7,7 @@
 
 * {
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 	border: none;
@@ -20,7 +20,7 @@
         background: linear-gradient(#4b0363, #1B0043); */
     /* background-image: url("/img2/bg-mobile.jpg") ; */
     background-repeat: no-repeat;
-    background-position:left top;   
+    background-position:left top;
 
 }
 
@@ -53,10 +53,7 @@
     text-align: center;
 }
 
-
-
-
-.subtitulo-principal{ 
+.subtitulo-principal{
     font-size: 2em;
     color: #dbbf20;
     text-align: center;
@@ -67,14 +64,48 @@
     font-size: 1em;
 }
 
-#titles-box {background: -o-linear-gradient(135deg, rgb(75, 3, 99,0.85), rgb(75, 3, 99,0.85), rgb(27, 0, 67,0.85), rgb(27, 0, 67,0.85));background: linear-gradient(-45deg, rgb(75, 3, 99,0.85), rgb(75, 3, 99,0.85), rgb(27, 0, 67,0.85), rgb(27, 0, 67,0.85));
+#titles-box {
+    background: -o-linear-gradient(135deg, rgb(75, 3, 99,0.85), rgb(75, 3, 99,0.85), rgb(27, 0, 67,0.85), rgb(27, 0, 67,0.85));background: linear-gradient(-45deg, rgb(75, 3, 99,0.85), rgb(75, 3, 99,0.85), rgb(27, 0, 67,0.85), rgb(27, 0, 67,0.85));
 	background-size: 400% 400%;
 	-webkit-animation: gradient 10s ease infinite;
-	        animation: gradient 10s ease infinite;
+	animation: gradient 10s ease infinite;
     padding: 20px 0
 
 }
 
+
+
+#main-box {
+    text-align: center;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+}
+.banner-descuento{
+    border-radius: 4px;
+    color: rgb(229, 216, 235);
+    text-transform: uppercase;
+    background-color: #cb2323;
+    background: -o-linear-gradient(135deg, #cb2323, #cb2323, #9b0202, #9b0202); 
+    background: linear-gradient(-90deg, #cb2323, #cb2323, #9b0202, #9b0202);
+    background-size: 400% 400%;
+	-webkit-animation: gradient 2s ease infinite;
+	animation: gradient 2s ease infinite;
+    width: 100%;
+    height: 100px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.banner-descuento a{
+    color:#fff;
+    font-size: 1em;
+    font-weight: 500;
+}
 @-webkit-keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -98,14 +129,6 @@
 		background-position: 0% 50%;
 	}
 }
-
-#main-box {
-    text-align: center;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center; */
-}
-
 
 /* ================video================ */
 #video-box{
@@ -259,6 +282,13 @@ margin-top: 20px
     background-position:left top;   
 }
 
+.banner-descuento{
+    width: 60%;
+    padding: 5px 10px
+}
+.banner-descuento a{
+    font-size:1.3em
+}
 
     #video-box{
         width: 65%;

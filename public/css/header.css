@@ -273,11 +273,11 @@ a{
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
         background-color: rgba(33, 6, 41,0.95);
         border: 2px solid black;
         padding:15px;
@@ -378,11 +378,11 @@ a{
     .mainNav{
         width: 50%;
         -ms-flex-pack: distribute;
-            justify-content: space-around;
+        justify-content: space-around;
     }
 
 
-    
+
     /* .iconsNav{
         margin: 0px;
         width: 10%;

@@ -1,84 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <%-include('includes/head') %>
     <title>Escuela Online - Sentir el Ser</title>
     <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/aprende.css">
     <link rel="stylesheet" href="/css/include-formaciones.css">
     <link rel="stylesheet" href="/css/profesores.css">
     <link rel="stylesheet" href="/css/testimonios.css">
 </head>
+
 <body>
 
-<!-- -------------------------------------Header -->
+    <!-- -------------------------------------Header -->
     <%-include('includes/header')%>
 
-<!-- -----------------------------------------------MAIN----------------------------------------------- -->
+    <!-- -----------------------------------------------MAIN----------------------------------------------- -->
 
     <main>
         <div id="main-box">
-        <div class="bgimg">
-        <div id="titles-box">
-            <a href="#estudia-section">
-        <h1 class="titulo-principal">Aprende Coaching Astro Filosófico</h1>
-        <h2 class="subtitulo-principal">Un conjunto de herramientas que transformarán tu vida y la de tus consultantes</h2>
-    </a>
+            <div class="bgimg">
+                <div id="titles-box">
+                    <a href="#estudia-section">
+                        <h1 class="titulo-principal">Aprende Coaching Astro Filosófico</h1>
+                        <h2 class="subtitulo-principal">Un conjunto de herramientas que transformarán tu vida y la de
+                            tus consultantes</h2>
+                    </a>
+                </div>
+                <div class="banner-descuento">
+                    <a href="/formaciones-online/formacion">Accede ahora con un 33% de descuento a la Formación Integral en transgeneracional y Astrogenealogía</a>
+                </div>
+                <div id="video-y-form">
+                    <div id="video-box">
+                        <iframe id="video" width="600" height="400" src="https://www.youtube.com/embed/IekJEHOtJn4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <p id="pie-video">Ve este video y conoce más de nuestra escuela</p>
+                    </div>
+                    <!-- FORMULARIO -->
+                    <form target="_blank" action="https://formsubmit.co/contacto@sentirelser.com" method="post" id="register-form">
+                    <!-- <form target="_blank" action="#" id="register-form"> -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <fieldset id="fildset-register">
+                            <!-- <h2>Registrate</h2> -->
+                            <p>Obten tu clase gratuita de Astrogenealogía</p>
+                            <div id="div-input-name">
+                                <label for="name">Nombre</label>
+                                <input type="text" class="form-input" id="name-input" name="name">
+                            </div>
+                            <div id="div-input-email">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-input" id="email-input" name="email">
+                            </div>
+                            <div>
+                                <button id="submit-button" type="submit">UNIRME</button>
+                            </div>
+                        </fieldset>
+                    </form>
+
+
+
+                </div>
+            </div>
+            <!-- -------------------------------------Estudia Online -->
+
+            <%-include('includes/formaciones')%>
+
+            <!-- ----------------------------Profesores -->
+
+            <%-include('includes/profesores')%>
+
+            <!-- ----------------------------Aprende con nosotros -->
+
+            <%-include('includes/aprende')%>
+
+            <!-- --------------------------------------------------testimonios -->
+
+            <%-include('includes/testimonios')%>
+
         </div>
-        <div id="video-y-form">
-        <div id="video-box">
-        <iframe id="video" width="600" height="400" src="https://www.youtube.com/embed/IekJEHOtJn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p id="pie-video">Ve este video y conoce más de nuestra escuela</p>
-        </div>
-<!-- FORMULARIO -->
-<!-- <form target="_blank" action="https://formsubmit.co/contacto@sentirelser.com" method="post" id="register-form"> -->
-<form target="_blank" action="#" id="register-form">
-    <input type="hidden" name="_captcha" value="false">
-    <fieldset id="fildset-register">
-        <!-- <h2>Registrate</h2> -->
-        <p>Obten tu clase gratuita de Astrogenealogía</p>
-        <div id="div-input-name">
-            <label for="name">Nombre</label>
-            <input type="text" class="form-input" id="name-input" name="name">
-        </div>
-        <div id="div-input-email">
-            <label for="email" >Email</label>
-            <input type="email" class="form-input" id="email-input" name="email">
-        </div>
-        <div>
-        <button id="submit-button" type="submit">UNIRME</button>
-        </div>
-    </fieldset>
-</form>
-
-
-
-</div>
-</div>
-<!-- -------------------------------------Estudia Online -->
-
-<%-include('includes/formaciones')%> 
-
-<!-- ----------------------------Profesores -->
-
-<%-include('includes/profesores')%> 
-
-<!-- ----------------------------Aprende con nosotros -->
-
-<%-include('includes/aprende')%> 
-
-<!-- --------------------------------------------------testimonios -->
-
-<%-include('includes/testimonios')%> 
-
     </main>
 
-<%-include('includes/footer')%> 
+    <%-include('includes/footer')%>
 
 </body>
 

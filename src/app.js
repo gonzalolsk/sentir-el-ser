@@ -3,10 +3,10 @@ const app = express();
 const path = require('path');
 // var helmet = require('helmet');
 // app.use(helmet());
-const http = require('http');
 
 
-//Server Start 
+
+//Server Start
 app.set("port", process.env.PORT || 3003);
 app.listen(app.get("port"), () => console.log("Servidor corriendo en http://localhost:" + app.get("port")));
 
@@ -29,6 +29,6 @@ app.use('/', profesoresRoutes);
 app.use('/formaciones-online', formacionesOnlineRouter);
 
 //Error 404
-app.get("*", (req,res) => { 
+app.get("*", (req,res) => {
     res.render("error404")
 })
