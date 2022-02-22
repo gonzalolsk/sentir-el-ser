@@ -1,3 +1,46 @@
+.button-box{
+    display: flex;
+    justify-content: center;
+}
+.button-formacion{
+    padding:1rem;
+    background-color: #4b0363;
+    color: #fff;
+}
+.border{
+    border: 1px solid #000
+}
+
+.imagen-pequeña{
+    width: 200px;
+    margin: 0 auto;
+}
+.art-flex-items{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content-flex-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.3.6,
@@ -5,7 +48,7 @@
 * Browsers: last 4 version
 */
 
-* {
+/* * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -26,6 +69,16 @@
             justify-content: center;
     margin:40px;
     text-align: justify;
+}
+.button-box{
+    display: flex;
+    justify-content: center;
+}
+.button-formacion{
+    padding:1rem;
+    background-color: #4b0363;
+    color: #fff;
+
 }
 #formacion-box p, #formacion-box li{
     font-size:1.5rem
@@ -84,7 +137,6 @@ article.art-formacion.lista.modulos li {
     margin: 5px;
 }
 
-/* formulario------------------------------------------------------------------- */
 #register-form{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -241,7 +293,6 @@ article.art-formacion.lista.modulos li {
 @media (max-width: 576px){
     #formacion-box p, #formacion-box li{
         font-size: 1.3rem;
-        /* hyphens: auto;
-        -webkit-hyphens: auto; */
+
     }
-}
+} */
