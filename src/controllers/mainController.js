@@ -4,6 +4,7 @@ const controller = {
     formaciones: (req, res) => { res.render('formaciones')},
     testimonios: (req, res) => { res.render('includes/testimonios')},
     blog: (req, res) => { res.render('blog/blog')},
-    reto_suenos: (req, res) => { res.render('reto_suenos')}
+    reto_suenos: (req, res) => { res.render('reto_suenos')},
 }
 module.exports = controller
+ 
