@@ -1,0 +1,23 @@
+.blog-art{
+    margin-bottom: 2rem;
+}
+.blog-art img{
+    max-width: 400px;
+}
+.blog-art .art-content{
+    max-width: 80%;
+    font-size: 1.3em;
+    margin: 0 auto;
+    text-align: left;
+
+}
+.blog-art h1{
+    font-weight: bold;
+}
+.blog-art p{
+}
+
+/* articulo 2 */
+ol li{
+    margin: 1rem 0;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <%-include('../includes/head') %>
+    <title>Escuela Online - Sentir el Ser</title>
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/aprende.css">
+    <link rel="stylesheet" href="/css/include-formaciones.css">
+    <link rel="stylesheet" href="/css/profesores.css">
+    <link rel="stylesheet" href="/css/testimonios.css">
+    <link rel="stylesheet" href="/css/blog.css">
+</head>
+
+<body>
+
+    <!-- -------------------------------------Header -->
+    <%-include('../includes/header')%>
+
+    <!-- -----------------------------------------------MAIN----------------------------------------------- -->
+
+    <main>
+        <div id="main-box">
+
+            <h1>BLOG DE SENTIR EL SER</h1>
+            
+            <%-include('../blog/articles/article1')%>
+            <%-include('../blog/articles/article2')%>
+
+
+            <!-- -------------------------------------Estudia Online -->
+
+            <%-include('../includes/formaciones')%>
+
+            <!-- ----------------------------Profesores -->
+
+            <%-include('../includes/profesores')%>
+
+            <!-- ----------------------------Aprende con nosotros -->
+
+            <%-include('../includes/aprende')%>
+
+            <!-- --------------------------------------------------testimonios -->
+
+            <%-include('../includes/testimonios')%>
+
+        </div>
+    </main>
+
+    <%-include('../includes/footer')%>
+
+</body>
+
+</html>
