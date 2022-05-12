@@ -148,7 +148,7 @@ background-color: #4b0363;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-
+    text-decoration: none;
 }
 
 .art-seminarios{

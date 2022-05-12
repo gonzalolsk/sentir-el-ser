@@ -6,7 +6,8 @@ const mainController = require("../controllers/mainController")
 router.get('/', mainController.home);
 router.get('/sobre-nosotros', mainController.aboutUs);
 router.get('/blog', mainController.blog);
-router.get('/reto_suenos', mainController.reto_suenos);
+// router.get('/reto_suenos', mainController.reto_suenos);
+router.get('/seminario-astrogenealogia', mainController.seminarioAstrogenealogia);
 
 
 router.get('/testimonios', mainController.testimonios);

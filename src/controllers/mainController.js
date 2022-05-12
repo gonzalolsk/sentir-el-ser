@@ -5,6 +5,7 @@ const controller = {
     testimonios: (req, res) => { res.render('includes/testimonios')},
     blog: (req, res) => { res.render('blog/blog')},
     reto_suenos: (req, res) => { res.render('reto_suenos')},
+    seminarioAstrogenealogia: (req, res) => { res.render('seminario-astrogenealogia')},
 }
 module.exports = controller
  
