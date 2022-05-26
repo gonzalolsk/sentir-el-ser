@@ -6,6 +6,8 @@ const controller = {
     blog: (req, res) => { res.render('blog/blog')},
     reto_suenos: (req, res) => { res.render('reto_suenos')},
     seminarioAstrogenealogia: (req, res) => { res.render('seminario-astrogenealogia')},
+    tecnicasSueos: (req, res) => { res.render('tecnicas_sueos')},
+    arbolGenealogico: (req, res) => { res.render('arbol_genealogico')},
+    astrogenealogia: (req, res) => { res.render('astrogenealogia')},
 }
 module.exports = controller
- 
