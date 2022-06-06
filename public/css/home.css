@@ -267,9 +267,123 @@ margin-top: 20px
 }
 
 
+/* seccion para el seminario de sueños */
+.reto_sueos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.reto_sueos h3:first-child{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    background-color: #1B0043;
+}
+.art-seminarios{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4b0363), to(rgb(191, 126, 218)));
+    background: -o-linear-gradient(#4b0363, rgb(191, 126, 218));
+    background: linear-gradient(#4b0363, rgb(191, 126, 218));
+    width: 350px;
+    height: 491px;
+    margin: 20px 50px;
+    padding:10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.71);
+    position:relative;
+}
+.art-seminarios-sueos{
+    background: transparent;
+}
+.art-seminarios h2{
+    font-size: 1.2rem;
+    margin: 10px 0;
+    border-bottom: #ffb347 3px solid;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
 
 
+}
+.art-seminarios img{
+    width: 100%;
+    max-width: 223px;
+}
 
+.art-seminarios p{
+    width: 100%;
+    padding:8px;
+    line-height: 150%;
+    color: #fff;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+    align-items: center;
+}
+.art-seminarios-sueos p{
+    color: #000;    
+}
+.button{
+    text-decoration: none;
+    min-width: 154px;
+    height: 35px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ffb347), color-stop(50%, #ffcc33), to(#ffb347));
+    background-image: -o-linear-gradient(left, #ffb347 0%, #ffcc33  50%, #ffb347  100%);
+    background-image: linear-gradient(to right, #ffb347 0%, #ffcc33  50%, #ffb347  100%);
+    margin: 10px;
+    padding: 10px 10px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    background-size: 200% auto;
+    color: white;
+    -webkit-box-shadow: 0 0 10px #eee;
+    box-shadow: 0 0 10px #eee;
+    border: 0px solid;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position:absolute;
+    bottom: 16px;
+}
+
+
+.button:hover {
+    background-position: right center;
+    color: rgb(39, 36, 36);;
+    text-decoration: none;
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); 
+}
+/* fin seccion para seminario de sueños */
 
 
 
