@@ -1,0 +1,22 @@
+<div class="form-group">
+    <label for="title">Titulo</label>
+    <input required value="<%= article.title? article.title: ""  %> " type="text" name="title" id="title" class="form-control">
+</div>
+<div class="form-group">
+    <label for="img">Imagen</label>
+    <input required value="<%= article.img? article.img: ""  %> " type="text" name="img" id="img" class="form-control">
+</div>
+<div class="form-group">
+    <label for="description">Descripción</label>
+    <textarea required name="description" id="description" class="form-control">
+        <%= article.description? article.description: ""  %>
+    </textarea>
+</div>
+<div class="form-group">
+    <label for="markdown">Cuerpo (markdown)</label>
+    <textarea  name="markdown" id="markdown" class="form-control">
+        <%= article.markdown? article.markdown: ""  %>
+    </textarea>
+</div>
+    <a href="/" class="btn btn-secondary">Cancelar</a>
+    <button type="submit" class="btn btn-primary">Guardar</button>

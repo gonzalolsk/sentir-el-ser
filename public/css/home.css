@@ -12,6 +12,9 @@
 	margin: 0;
 	border: none;
 }
+#video-y-form, .reto_sueos{
+max-width: 1600px;
+}
 ul{
     list-style: none;
 }

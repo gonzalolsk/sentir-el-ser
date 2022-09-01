@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <%-include('../../includes/head') %>
+    <title>Escuela Online - Sentir el Ser</title>
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="/css/blog.css">
+</head>
+
+<body>
+
+    <!-- -------------------------------------Header -->
+    <%-include('../../includes/header')%>
+
+    <!-- -----------------------------------------------MAIN----------------------------------------------- -->
+
+    <main>
+        <div class="btn-group">
+            <a href="/blog" class="blog-btn blog-btn-primary">Todos los Artículos</a>
+            <a href="/blog/articulos/editar/<%= article.id %> " class="blog-btn blog-btn-info">
+                Editar
+            </a>
+            <form action="/blog/<%= article.id %>?_method=DELETE" method="POST" class="form-eliminar">
+                <button type="submit" class="blog-btn blog-btn-danger">Eliminar</button>
+            </form>
+        </div>
+            <div id="box-show-article">
+                <h1 class=""> <%= article.title %> </h1>
+                <figure>
+                    <img src="/img/blog/<%=article.img%>" alt="imagen de articulo">
+                </figure>
+                
+                <div class="body-art">
+                    <%- article.sanitizedHtml%> 
+                </div>
+                <div class="text-muted"> <%= article.createdAt.toLocaleDateString('en-GB') %> </div>
+            </div>
+
+
+    </main>
+
+
+</body>
+
+</html>

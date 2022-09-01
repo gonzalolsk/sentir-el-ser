@@ -8,12 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <!-- CSS only -->
     <link rel="stylesheet" href="/css/normalize.css" type="text/css" />
-    <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="/css/aprende.css">
-    <link rel="stylesheet" href="/css/include-formaciones.css">
-    <link rel="stylesheet" href="/css/profesores.css">
-    <link rel="stylesheet" href="/css/testimonios.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="/css/blog.css">
 </head>
 
@@ -27,27 +24,49 @@
     <main>
         <div id="main-box">
 
-            <h1>BLOG DE SENTIR EL SER</h1>
+            <!-- <h1>BLOG DE SENTIR EL SER</h1>
             
             <%-include('../blog/articles/article1')%>
-            <%-include('../blog/articles/article2')%>
+            <%-include('../blog/articles/article2')%> -->
+
+            <div id="box-blog">
+                <h1 class="mb-4">BLOG DE SENTIR EL SER</h1>
+                <a href="/blog/articulos/crear" class="blog-btn blog-btn-primary">Nuevo Articulo</a>
+                <h2>Todos los artículos:
+                    
+                </h2>
+                <div id="box-articulos">
+                    <% articles.forEach(article =>  {  %>
+                        <div class="card art">
+                            <div class="card-body">
+                                <h4 class="card-title"><%= article.title %></h4>
+                                <figure>
+                                    <img src="/img/blog/<%=article.img%> " alt="imagen de articulo">
+                                </figure>
+                                <div class="card-subtitle text-grey">
+                                    <%=  article.createdAt.toLocaleDateString('en-GB') %>
+                                </div>
+                                    <div class="card-text">
+                                        <%= article.description %>
+                                    </div>
+                                    <div class="btn-group">
+                                        <a href="blog/articulos/<%= article.slug %> " class="blog-btn blog-btn-primary">
+                                            Leer
+                                        </a>
+                                        <a href="blog/articulos/editar/<%= article.id %> " class="blog-btn blog-btn-info">
+                                            Editar
+                                        </a>
+                                        <form action="/blog/<%= article.id %>?_method=DELETE" method="POST" class="form-eliminar">
+                                            <button type="submit" class="blog-btn blog-btn-danger">Eliminar</button>
+                                        </form>
+                                    </div>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
 
 
-            <!-- -------------------------------------Estudia Online -->
-
-            <%-include('../includes/formaciones')%>
-
-            <!-- ----------------------------Profesores -->
-
-            <%-include('../includes/profesores')%>
-
-            <!-- ----------------------------Aprende con nosotros -->
-
-            <%-include('../includes/aprende')%>
-
-            <!-- --------------------------------------------------testimonios -->
-
-            <%-include('../includes/testimonios')%>
 
         </div>
     </main>

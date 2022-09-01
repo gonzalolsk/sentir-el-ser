@@ -1,23 +1,88 @@
-.blog-art{
-    margin-bottom: 2rem;
+/* Index Blog */
+#box-blog, #box-show-article{
+    padding: 3rem;
+    background-color: #2a2929;
+    color: #fff;
 }
-.blog-art img{
-    max-width: 400px;
+#box-articulos{
+    display: flex;
+    flex-wrap: wrap;
 }
-.blog-art .art-content{
-    max-width: 80%;
-    font-size: 1.3em;
-    margin: 0 auto;
-    text-align: left;
+.art{
+    margin: 1rem;
+}
+.blog-btn{
+    border-radius: 7px;
+    padding: 0.3rem 1rem;
+    margin: 1rem 0px;
+    text-decoration: none;
+    margin: 1rem 0.5rem;
+    border:none;
+}
+.blog-btn-primary{
+    background-color: blue;
+    color: #fff;
+}
+.blog-btn-info{
+    background-color: purple;
+    color: #fff;
+}
+.blog-btn-danger{
+    background-color: crimson;
+    color: #fff;
+}
+.form-eliminar{
+    text-align: center;
+    display: inline;
+}
+.text-grey{
+    color:#808080
+}
+.card-title .card-subtitle, .card-text{
+    margin-bottom:1rem
+}
+.art{
+    border: 1px solid #d1d1d1;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 350px;
+    height: 560px;
+    position: relative;
+}
+.art figure img{
+    width: 100%;
+}
+.art figure{
+    width: 250px;
+    margin: auto
+}
+.btn-group{
+    background-color: #2a2929;
 
 }
-.blog-art h1{
-    font-weight: bold;
-}
-.blog-art p{
+#box-blog #box-articulos .btn-group {
+    position: absolute;
+    bottom: 1rem;
+    left: 15%
 }
 
-/* articulo 2 */
-ol li{
-    margin: 1rem 0;
+
+
+
+/* Show Article*/
+
+#box-show-article{
+    padding:2rem 5rem;
+    text-align: center;
+}
+#box-show-article figure img{
+    width: 100%;
+}
+#box-show-article figure{
+    max-width: 300px;
+    margin: auto;
+}
+#box-show-article .body-art{
+    text-align: justify;
+    font-size: 1.3rem;
 }
