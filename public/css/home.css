@@ -12,6 +12,10 @@
 	margin: 0;
 	border: none;
 }
+body{
+    max-width: 1500px;
+    margin:auto
+}
 ul{
     list-style: none;
 }
