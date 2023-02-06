@@ -272,12 +272,7 @@ margin-top: 20px
 
 
 /* seccion para el seminario de sueños */
-.reto_sueos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.reto_sueos h3:first-child{
+.reto_sueos_container h3{
     font-size: 2em;
     color: #fff;
     text-align: center;
@@ -286,7 +281,25 @@ margin-top: 20px
     padding: 10px;
     text-align: center;
     background-color: #1B0043;
+    width: 90%;
+    margin: auto;
 }
+.reto_sueos_container h4{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    color: #1B0043;
+    width: 90%;
+    margin: 1rem auto;
+}
+    .reto_sueos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 .art-seminarios{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -324,7 +337,7 @@ margin-top: 20px
 }
 .art-seminarios img{
     width: 100%;
-    max-width: 223px;
+    max-width: 310px;
 }
 
 .art-seminarios p{
